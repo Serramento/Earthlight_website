@@ -1,28 +1,26 @@
 import "./App.css";
-import React, { useRef } from "react";
-import Header from "./layout/Header";
-import PageContent from "./layout/PageContent";
-import Footer from "./layout/Footer";
+import React from "react";
+import DilarasPage from "./pages/DilarasPage";
+import { Routes, Route } from "react-router-dom";
+import EarthlightPrivateConcierge from "./pages/EarthlightPrivateConcierge";
+import MainPage from "./pages/MainPage";
+import EarthlightMICE from "./pages/EarthlightMICE";
 
 function App() {
-  const homeRef = useRef(null);
-  const aboutUsRef = useRef(null);
-  const servicesRef = useRef(null);
-  const contactRef = useRef(null);
   return (
     <div className="font-lato">
-      <Header
-        homeRef={homeRef}
-        aboutUsRef={aboutUsRef}
-        servicesRef={servicesRef}
-        contactRef={contactRef}
-      />
-      <PageContent
-        aboutUsRef={aboutUsRef}
-        servicesRef={servicesRef}
-        contactRef={contactRef}
-      />
-      <Footer homeRef={homeRef} />
+      <Routes>
+        <Route exact path="/" element={<MainPage />} />
+
+        <Route path="/dilarasRecomienda" element={<DilarasPage />} />
+
+        <Route
+          path="/earthlightPrivateConcierge"
+          element={<EarthlightPrivateConcierge />}
+        />
+
+        <Route path="/earthlightMice" element={<EarthlightMICE />} />
+      </Routes>
     </div>
   );
 }
