@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
-import Egeo from "../images/Egeo.mp4";
 
-export default function AutoPlaySilentVideo() {
+export default function AutoPlaySilentVideo(props) {
   const videoRef = useRef(undefined);
   useEffect(() => {
     videoRef.current.defaultMuted = true;
@@ -16,7 +15,7 @@ export default function AutoPlaySilentVideo() {
       muted
       playsInline
     >
-      <source src={Egeo} type="video/mp4" />
+      <source src={props.video} type="video/mp4" />
     </video>
   );
 }

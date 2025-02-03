@@ -4,6 +4,7 @@ import DilarasLogo from "../images/DilarasLogo.png";
 import { Link } from "react-router-dom";
 import EarthLightLogo2 from "../images/EarthLightLogo2.png";
 import AutoPlaySilentVideo from "../components/AutoplaySilentVideo";
+import Egeo from "../images/Egeo.mp4";
 
 export default function Header(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -185,7 +186,7 @@ export default function Header(props) {
 
       {/* Video */}
       <section className="relative w-screen h-screen md:h-[46rem]">
-        <AutoPlaySilentVideo />
+        <AutoPlaySilentVideo video={Egeo} />
         {/*<video
           src={Goleta}
           id="bannerVideo"
