@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import AutoPlaySilentVideo from "../components/AutoplaySilentVideo";
-import EarthlightLogo2 from "../images/EarthlightLogo2.png";
+import EarthlightLogo2 from "../images/EarthLightLogo2.png";
 
 export default function Header(props) {
   const [isOpen, setIsOpen] = useState(false);
