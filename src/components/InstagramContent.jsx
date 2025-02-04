@@ -31,7 +31,7 @@ const InstagramContent = (props) => {
               to={props.post.href}
               className="text-[#39405A] font-bold text-sm mt-7 pr-1 mb-10 lg:mb-3"
             >
-              Aprender Más
+              {props.learnMore}
             </Link>
             <FontAwesomeIcon
               icon={faChevronRight}

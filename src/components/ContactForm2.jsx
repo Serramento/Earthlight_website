@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
 
-export default function ContactForm() {
+export default function ContactForm2() {
   const {
     register,
     handleSubmit,
@@ -36,7 +36,7 @@ export default function ContactForm() {
       })
       .then((response) => {
         console.log(response.data);
-        toast.success("Tu mensaje ha sido entregado.");
+        toast.success("Your message has been sent");
         reset();
       })
       .catch((error) => {
@@ -46,21 +46,16 @@ export default function ContactForm() {
   };
 
   const validateName = (value) => {
-    return (
-      value.trim().length >= 3 || "El nombre debe tener al menos 3 caracteres"
-    );
+    return value.trim().length >= 3 || "Name must be at least 3 characters";
   };
 
   const validateSubject = (value) => {
-    return (
-      value.trim().length >= 3 || "El asunto debe tener al menos 3 caracteres"
-    );
+    return value.trim().length >= 3 || "Subject must be at least 3 characters";
   };
 
   const validateMessage = (value) => {
     return (
-      value.trim().length >= 10 ||
-      "Su mensaje debe tener al menos 10 caracteres"
+      value.trim().length >= 10 || "Message must be at least 10 characters"
     );
   };
 
@@ -74,7 +69,7 @@ export default function ContactForm() {
           <div className="mt-24 mb-8">
             <input
               className="sm:w-80 w-72 md:w-[28rem] h-16 pl-5 bg-[#F9F9F9] border-[2px] border-[#E6E6E6] rounded-xl placeholder-[#737373] "
-              placeholder="Nombre*"
+              placeholder="Name*"
               id="name"
               type="text"
               {...register("name", { validate: validateName })}
@@ -89,7 +84,7 @@ export default function ContactForm() {
           <div className="mb-8">
             <input
               className="sm:w-80 w-72 md:w-[28rem] h-16 pl-5 bg-[#F9F9F9] border-[2px] border-[#E6E6E6] rounded-xl placeholder-[#737373] "
-              placeholder="Correo*"
+              placeholder="E-mail*"
               id="email"
               type="text"
               {...register("email", {
@@ -97,7 +92,7 @@ export default function ContactForm() {
                 pattern: {
                   value: /\S+@\S+\.\S+/,
                   message:
-                    "El valor ingresado no coincide con el formato de correo electrónico",
+                    "The value you entered does not match the email format",
                 },
               })}
             />
@@ -109,7 +104,7 @@ export default function ContactForm() {
           <div className="mb-8">
             <input
               className="sm:w-80 w-72 md:w-[28rem] h-16 pl-5 bg-[#F9F9F9] border-[2px] border-[#E6E6E6] rounded-xl placeholder-[#737373] "
-              placeholder="Sujeto*"
+              placeholder="Subject*"
               id="subject"
               type="text"
               {...register("subject", { validate: validateSubject })}
@@ -124,7 +119,7 @@ export default function ContactForm() {
           <div className="mb-8">
             <textarea
               className="sm:w-80 w-72 pt-4 md:w-[28rem] h-48 md:h-64 pl-5 bg-[#F9F9F9] border-[2px] border-[#E6E6E6] rounded-xl placeholder-[#737373] "
-              placeholder="Mesaje*"
+              placeholder="Message*"
               id="description"
               {...register("message", { validate: validateMessage })}
             ></textarea>
@@ -139,7 +134,7 @@ export default function ContactForm() {
               type="submit"
               disabled={!isValid}
             >
-              ENTREGAR
+              SEND
             </button>
           </div>
         </div>

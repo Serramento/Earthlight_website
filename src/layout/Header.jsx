@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import DilarasLogo from "../images/DilarasLogo.png";
 import { Link } from "react-router-dom";
-import EarthLightLogo2 from "../images/EarthLightLogo2.png";
 import AutoPlaySilentVideo from "../components/AutoplaySilentVideo";
-import Egeo from "../images/Egeo.mp4";
+import EarthlightLogo2 from "../images/EarthlightLogo2.png";
 
 export default function Header(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +24,7 @@ export default function Header(props) {
                     })
                   }
                 >
-                  <img src={DilarasLogo} alt="DilarasLogo" />
+                  <img src={props.info.logo} alt="DilarasLogo" />
                 </button>
               </div>
 
@@ -44,7 +42,7 @@ export default function Header(props) {
                         }
                       >
                         <div className="group inline-flex rounded-md h-10 w-max items-center justify-center text-[#FFFFFF] px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-                          HOGAR
+                          {props.info.home}
                         </div>
                       </button>
                     </li>
@@ -58,7 +56,7 @@ export default function Header(props) {
                         }
                       >
                         <div className="group inline-flex rounded-md h-10 w-max items-center justify-center text-[#FFFFFF] px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-                          SOBRE NOSOTROS
+                          {props.info.aboutUs}
                         </div>
                       </button>
                     </li>
@@ -72,7 +70,7 @@ export default function Header(props) {
                         }
                       >
                         <div className="group inline-flex rounded-md h-10 w-max items-center justify-center text-[#FFFFFF] px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-                          SERVICIOS
+                          {props.info.services}
                         </div>
                       </button>
                     </li>
@@ -86,17 +84,13 @@ export default function Header(props) {
                         }
                       >
                         <div className="group inline-flex rounded-md h-10 w-max items-center justify-center text-[#FFFFFF] px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-                          CONTACTO
+                          {props.info.contact}
                         </div>
                       </button>
                     </li>
                     <li>
-                      <Link to="https://www.earthlighttravel.com/">
-                        <img
-                          className="w-20 ml-5"
-                          src={EarthLightLogo2}
-                          alt="EarthLightLogo2"
-                        />
+                      <Link to="/">
+                        <img className="w-20 ml-5" src={EarthlightLogo2} />
                       </Link>
                     </li>
                   </ul>
@@ -133,7 +127,7 @@ export default function Header(props) {
                     })
                   }
                 >
-                  HOGAR
+                  {props.info.home}
                 </button>
                 <button
                   className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50"
@@ -144,7 +138,7 @@ export default function Header(props) {
                     })
                   }
                 >
-                  SOBRE NOSOTROS
+                  {props.info.aboutUs}
                 </button>
                 <button
                   className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50"
@@ -155,7 +149,7 @@ export default function Header(props) {
                     })
                   }
                 >
-                  SERVICIOS
+                  {props.info.services}
                 </button>
                 <button
                   className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50"
@@ -166,17 +160,13 @@ export default function Header(props) {
                     })
                   }
                 >
-                  CONTACTO
+                  {props.info.contact}
                 </button>
                 <Link
                   className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-[#98B8DF] hover:bg-gray-50"
-                  to="https://www.earthlighttravel.com/"
+                  to="/"
                 >
-                  <img
-                    className="w-24"
-                    src={EarthLightLogo2}
-                    alt="EarthLightLogo2"
-                  />
+                  <img className="w-24" src={EarthlightLogo2} />
                 </Link>
               </div>
             </div>
@@ -186,7 +176,7 @@ export default function Header(props) {
 
       {/* Video */}
       <section className="relative w-screen h-screen md:h-[46rem]">
-        <AutoPlaySilentVideo video={Egeo} />
+        <AutoPlaySilentVideo video={props.info.video} />
         {/*<video
           src={Goleta}
           id="bannerVideo"
@@ -206,7 +196,7 @@ export default function Header(props) {
             </div>*/}
             <div className="relative mx-12 md:ml-48 bottom-20 md:bottom-40">
               <h1 className="text-4xl text-left md:text-right md:text-6xl opacity-90 italic leading-normal">
-                Más Allá De Los Sueños
+                {props.info.videoText}
               </h1>
             </div>
           </div>

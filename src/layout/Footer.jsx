@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import DilarasLogo from "../images/DilarasLogo.png";
 import { Instagram, Linkedin } from "lucide-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,11 +9,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer(props) {
-  const mailtoHref =
-    "mailto:dilara@earthlighttravel.com?subject=SendMail&body=Description";
-  const mailtoHref2 =
-    "mailto:ugur@earthlighttravel.com?subject=SendMail&body=Description";
-
   return (
     <div className="max-w-md md:max-w-7xl">
       {/* Contact Info */}
@@ -32,13 +26,13 @@ export default function Footer(props) {
                 })
               }
             >
-              <img src={DilarasLogo} alt="DilarasLogo" />
+              <img src={props.info.logo} />
             </Link>
           </div>
 
           <div className="space-y-4 mb-16 md:mr-24 md:space-y-6 md:mb-0">
             <h3 className="text-lg font-semibold text-center md:text-left">
-              Ponte en Contacto con Nosotros
+              {props.info.contactInfo}
             </h3>
             <ul className="space-y-2 text-white md:space-y-4">
               <div className="flex flex-row w-64">
@@ -52,7 +46,7 @@ export default function Footer(props) {
                 />
                 <li>
                   Kosuyolu Mah. Imar Limited Sk. Laila Apt. No:24 D:1
-                  Kadikoy/Istanbul TURQUIA
+                  Kadikoy/Istanbul {props.info.turkiye}
                 </li>
               </div>
               <div className="flex flex-row w-64">
@@ -61,12 +55,18 @@ export default function Footer(props) {
                   className="h-6 mt-1 mr-2"
                 />
                 <li>
-                  <a href={mailtoHref} className="text-white underline">
-                    dilara@earthlighttravel.com
+                  <a
+                    href={props.info.mailtoHref}
+                    className="text-white underline"
+                  >
+                    {props.info.mail1}
                   </a>
                   <br />{" "}
-                  <a href={mailtoHref2} className="text-white underline">
-                    ugur@earthlighttravel.com
+                  <a
+                    href={props.info.mailtoHref2}
+                    className="text-white underline"
+                  >
+                    {props.info.mail2}
                   </a>
                 </li>
               </div>

@@ -17,20 +17,16 @@ import KariyeMuseum from "../images/KayanFotolar/KariyeMuseum.jpg";
 import Gulet from "../images/KayanFotolar/Gulet.jpg";
 import Marmaris from "../images/KayanFotolar/Marmaris.jpg";
 import Bodrum from "../images/KayanFotolar/Bodrum.png";
-import Dilara from "../images/WhoWeAre/Dilara.png";
-import Ugur from "../images/WhoWeAre/Ugur.png";
 import InstagramContent from "../components/InstagramContent";
-import ContactForm from "../components/ContactForm";
 import ImageSlider from "../components/ImageSlider";
-import ImageSlider2 from "../components/ImageSlider2";
-import ImageSlider3 from "../components/ImageSlider3";
-import AmpliaConexionesLocales from "../images/WhatWeOffer/AmpliaConexionesLocales.jpeg";
-import ApoyoenDestino from "../images/WhatWeOffer/ApoyoenDestino.jpeg";
-import FacilidaddeReserva from "../images/WhatWeOffer/FacilidaddeReserva.jpeg";
+import ImageSlider4 from "../components/ImageSlider4";
 import Flexibidad from "../images/WhatWeOffer/Flexibidad.jpeg";
 import ImmersionLocal from "../images/WhatWeOffer/ImmersionLocal.jpeg";
-import IntegraciondeTecnologia from "../images/WhatWeOffer/IntegraciondeTecnologia.jpeg";
 import Personalizacion from "../images/WhatWeOffer/Personalizacion.jpeg";
+import ContactForm2 from "../components/ContactForm2";
+import FotoMehmetGuray from "../images/WhoWeAre/FotoMehmetGuray.jpeg";
+import FotoMehmet from "../images/WhoWeAre/FotoMehmet.jpg";
+import FotoGuray from "../images/WhoWeAre/FotoGuray.jpg";
 
 const InstagramData = [
   {
@@ -55,47 +51,26 @@ const InstagramData = [
 
 const imageSliderData = [
   {
-    title: "Flexibilidad",
+    title: "Family Vacations",
     description:
-      "Creamos que ser flexible es el clave para retener y atraer talento humano aumentar la productividad. somos amantes de lo que hacemos y diseñamos su itinerario de forma flexible.",
+      "Family vacations are ideal to get together and spend some quality of time together with the other family members. We would like you to leave your family traveling arrangements to hands of our experienced team members who will create extraordinary travel experiences will exceed everyone’s expectations.",
     src: Flexibidad,
   },
   {
-    title: "Personalización",
+    title: "Concierge Services",
     description:
-      "Trabajamos en base a sus gustos, preferencias y necesidades, asegurándose de que el viaje sea personalizado para ustedes.",
+      "Our luxury concierge services is operated by huge network of trusted global suppliers in order to provide you the best solutions as well as bespoke travel experiences. Arranging a restaurant reservation, luxurious car service or even a helicopter tour&transfer is only a phone call or text away.",
     src: Personalizacion,
   },
   {
-    title: "Immersión Local",
-    description: "Ofrecemos ofertas exclusivas y descuentos.",
+    title: "Arts& Culture& History",
+    description:
+      "Our approach to historic and cultural places is private custom tours. All of these tours are individually guided with small groups of people. All our unique itineraries are handcrafted by our professional team and you will have a memorable experience from the moment your are greeted by your guide until you return to your hotel.",
     src: ImmersionLocal,
-  },
-  {
-    title: "Facilidad de Reserva",
-    description: "Somos accesibles.",
-    src: FacilidaddeReserva,
-  },
-  {
-    title: "Apoyo en Destino (24_7)",
-    description:
-      "Brindamos asistencia y apoyo durante todo el viaje, esperando que esto los brinda tranquilidad y seguridad durante su estancia en Turquía. Estamos pendientes para cualquier cosa cuando están en destino.",
-    src: ApoyoenDestino,
-  },
-  {
-    title: "Integración de Tecnología",
-    description:
-      "Usamos el plataforma Axus y nuestros itinerarios siempre son en español, portugués o ingles. Creamos código de barras según preferencia.",
-    src: IntegraciondeTecnologia,
-  },
-  {
-    title: "Amplia Conexiones Locales (guia en Español, experiencias etc.)",
-    description: "Contamos con experiencia y conocimiento en la industria.",
-    src: AmpliaConexionesLocales,
   },
 ];
 
-export default function PageContent(props) {
+export default function PageContentPrivateConcierge(props) {
   return (
     <div className="max-w-md md:max-w-7xl">
       {/* About Us */}
@@ -106,21 +81,26 @@ export default function PageContent(props) {
         <div className="px-7 md:px-36 ">
           <div className="text-center px-4 pb-12 py-20 md:pb-24 bg-white md:bg-[#FAFAFA]">
             <h5 className="text-lg font-bold pb-3 text-[#98B8DF] md:text-center">
-              SOBRE NOSOTROS
+              ABOUT US
             </h5>
             <div className="vertical-line2 mb-1"></div>
             <h2 className="text-5xl mb-10 font-bold text-[#39405A] italic">
-              Somos su Socia Local en Turquia
+              Private Concierge
             </h2>
             <p className="mt-4 text-lg text-[#C0BABA] md:px-24">
-              Contarán con nosotros para crear sus itinerarios y poder dejar
-              todo en manos de nuestro equipo dedicado y profesional. ¡Le
-              aseguramos que nuestro apasionado equipo estará a su disposición
-              para hacer realidad sus sueños! Somos una empresa de Agencia de
-              Viajes de lujo ubicada en Estambul que ofrece un servicio
-              impecable a sus estimados huéspedes de todo el mundo. Creamos
-              experiencias de viaje exquisitas y nos ocupamos de cada aspecto de
-              sus necesidades para que su viaje sea el más memorable.
+              Count on us for your all travel arrangements and leave your travel
+              needs in the hands of our dedicated and professional team. We
+              ensure you that our passionate team will be at your disposal to
+              make your travel dreams come true! <br />​ Earthlight Travel
+              Services is a luxury travel management company based in Istanbul
+              which provides an impeccable service to its esteemed guests all
+              over the world. We create exquisite travel experiences and take
+              care of every aspect of your travel needs to make your journey the
+              most memorable one!
+              <br />​ Our aim is to inspire you to change your live through
+              unforgettable travel experiences and we strongly believe that
+              luxury travel is about the pursuit of unique experiences and
+              creating lifetime memories through excellent services.
             </p>
           </div>
         </div>
@@ -196,16 +176,33 @@ export default function PageContent(props) {
       {/* What We Offer */}
       <section className="w-screen" ref={props.servicesRef}>
         <div className="md:bg-[#FAFAFA] md:mx-36 md:py-20 px-4 sm:px-6 lg:px-8 text-center">
-          <ImageSlider
-            imageSliderData={imageSliderData}
-            title="¿QUE OFRECEMOS?"
-          />
+          <ImageSlider imageSliderData={imageSliderData} title="SERVICES" />
         </div>
       </section>
 
-      {/* Carousel */}
-      <section className="">
-        <ImageSlider2 />
+      {/* Why Choose Us */}
+      <section className="py-20 bg-[#FAFAFA] w-screen">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <img src={FotoMehmetGuray} alt="MehmetGuray" className="" />
+          <div className="text-center mb-12">
+            <h5 className="text-lg font-bold pb-3 text-[#98B8DF] md:text-left md:ml-36">
+              WHY CHOOSE US?
+            </h5>
+            <div className="vertical-line2 mb-1 md:ml-56"></div>
+            <div className="text-md text-[#C0BABA]">
+              Professional, dedicated and passionate travel advisors have an
+              extensive background in luxury hotel industry
+              <br />
+              ​ Personalised and exclusive service
+              <br />
+              7/24 reachable and flexible team
+              <br />
+              Great connections with luxury hotel chains worldwide
+              <br />
+              Attention to each and every single details
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Who we are */}
@@ -213,69 +210,52 @@ export default function PageContent(props) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h5 className="text-lg font-bold pb-3 text-[#98B8DF] md:text-left md:ml-36">
-              ¿QUIENES SOMOS?
+              OUR FAMILY
             </h5>
             <div className="vertical-line2 mb-1 md:ml-56"></div>
             <div>
               <div className="flex flex-col mb-3 px-5 items-center justify-center md:flex-row md:mx-20">
-                <img src={Dilara} alt="Dilara" className="w-60 mb-5 md:mr-10" />
+                <img
+                  src={FotoGuray}
+                  alt="Guray"
+                  className="w-60 rounded-full mb-5 md:mr-10"
+                />
                 <div>
                   <h5 className="text-lg font-bold text-[#39405A] md:text-left">
-                    Dilara Bayramoglu
+                    Güray Can
                   </h5>
                   <p className="text-lg text-[#39405A] md:text-left italic">
-                    Creativa de la Marca
+                    Managing Partner
                   </p>
                   <p className="mt-3 text-md text-[#C0BABA] md:text-left">
-                    ¡Hola! Soy Dilara. Me gradué del Liceo Francés Sainte
-                    Pulchérie y termine mis estudios en la Universidad de
-                    Istanbul sobre traducción Francés y Español.  Después de
-                    graduarme tuve oportunidad de empezar con el sector turismo
-                    en el segmento de lujo y llevo más de 15 años trabajando con
-                    las agencias de viajes más reconocidas de Sudamérica, Mexico
-                    y el Caribe brindando un servicio personalizado. Participé
-                    en varios eventos internacionales como Travel Week, ILTM São
-                    Paulo, Virtuoso Events y Virtuoso Roadshows en Mexico y Pure
-                    Life Experiences en Marruecos. Me gusta conocer las
-                    diferentes culturas y expectativas de mis futuros ‘posibles’
-                    viajeros. Estamos ofreciendo experiencias extraordinarias en
-                    todo Turquía. Soy perfeccionista, detallista y amante de
-                    explorar las últimas tendencias. Y siempre  me fascina tener
-                    buenos comentarios de los huéspedes. Me consideró ser una
-                    persona empática y creo firmemente que es una de las claves
-                    para cumplir los sueños de los que viajarán a Turquía
-                    conmigo.
+                    Güray has been part of the Travel industry for over 20 years
+                    and worked in wide range of luxury hotel groups including
+                    Kempinski,Shangri-La,Sofitel and Mandarin Oriental Hotel
+                    Group where he has built a wealth of knowledge about
+                    leisure,MICE and corporate sides of the industry.
                   </p>
                 </div>
               </div>
               <div className="vertical-line2 mb-1 md:ml-56"></div>
               <div className="flex flex-col items-center justify-center px-5 md:flex-row md:mx-20">
-                <img src={Ugur} alt="Ugur" className="w-60 mb-5 md:mr-10" />
+                <img
+                  src={FotoMehmet}
+                  alt="Mehmet"
+                  className="w-60 rounded-full mb-5 md:mr-10"
+                />
                 <div>
                   <h5 className="text-lg font-bold text-[#39405A] md:text-left">
-                    Ugur Kiyici
+                    Mehmet Sarıhasan
                   </h5>
                   <p className="text-[#39405A] text-lg md:text-left italic">
-                    Jefe de Operaciones
+                    Managing Partner
                   </p>
                   <p className="mt-3 text-md text-[#C0BABA] md:text-left">
-                    ¡Hola! Soy Uğur.  Bienvenidos a mi rincón de mundo digital,
-                    donde los daré una idea de quién soy y qué me motiva.Siempre
-                    me ha apasionado el turismo y siempre es un camino lleno de
-                    emociones. Mi camino desde el principio hasta ahora ha sido
-                    una mezcla de aprendizaje, desafíos y crecimiento en el
-                    sentido de superación personal. Soy curioso por aprender
-                    nuevas cosas y descubrir lugares nuevos. Yo creo que
-                    curiosidad es la esencia del aprendizaje continuo. Disfruto
-                    explorar el mundo que nos rodea profundizando en las
-                    complejidades de las temas turismo ,educación y trabajo. He
-                    tenido el privilegio de trabajar en todos los campos de la
-                    industria del turismo en mis 12 años de carrera. A través de
-                    estas experiencias logré mantener mi determinación de
-                    aprender más. El cielo es el límite! Gracias acompañarme en
-                    este sección y aprender un poco sobre mí. ¡El viaje que
-                    tienen por delante está lleno de curiosidad, crecimiento y
-                    experiencias únicas!
+                    Mehmet has been working in the travel industry almost 10
+                    years.He has worked in different positions in luxury hotel
+                    sales departments and lastly worked in Shangri-La Hotel
+                    Group where he has gained extensive experience about the
+                    luxury segment and MICE.
                   </p>
                 </div>
               </div>
@@ -288,9 +268,7 @@ export default function PageContent(props) {
       <section className="py-20 w-screen">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-3">
-            <h2 className="text-lg font-bold mb-3 text-[#98B8DF]">
-              PUBLICACIONES DESTACADAS
-            </h2>
+            <h2 className="text-lg font-bold mb-3 text-[#98B8DF]">FOLLOW US</h2>
             <div className="vertical-line2 mb-1"></div>
           </div>
           <div className="md:hidden flex flex-col items-center justify-center md:flex-row">
@@ -298,7 +276,7 @@ export default function PageContent(props) {
               <InstagramContent
                 key={index}
                 post={post}
-                learnMore="Aprender Más"
+                learnMore="Learn More"
               />
             ))}
           </div>
@@ -307,7 +285,7 @@ export default function PageContent(props) {
               <InstagramContent
                 key={index}
                 post={post}
-                learnMore="Aprender Más"
+                learnMore="Learn More"
               />
             ))}
           </div>
@@ -316,7 +294,7 @@ export default function PageContent(props) {
 
       {/* Comments */}
       <section className="py-20 bg-[#FAFAFA] w-screen">
-        <ImageSlider3 />
+        <ImageSlider4 />
       </section>
 
       {/* Contact Form */}
@@ -326,13 +304,13 @@ export default function PageContent(props) {
       >
         <div className="hidden md:flex flex-col mt-40 bottom-0">
           <h2 className="text-lg font-bold text-[#98B8DF] -rotate-90">
-            CONTÁCTANOS
+            CONTACT US
           </h2>
           <div className="vertical-line3 mt-16"></div>
         </div>
-        <ContactForm />
+        <ContactForm2 />
         <h2 className="md:hidden mb-3 text-lg font-bold text-[#98B8DF]">
-          CONTÁCTANOS
+          CONTACT US
         </h2>
         <div className="md:hidden vertical-line2"></div>
       </section>
