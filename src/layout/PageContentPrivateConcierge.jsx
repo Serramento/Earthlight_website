@@ -181,25 +181,28 @@ export default function PageContentPrivateConcierge(props) {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-[#FAFAFA] w-screen">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <img src={FotoMehmetGuray} alt="MehmetGuray" className="" />
-          <div className="text-center mb-12">
-            <h5 className="text-lg font-bold pb-3 text-[#98B8DF] md:text-left md:ml-36">
+      <section className="bg-[#98B8DF] w-screen">
+        <div className="md:flex md:flex-row md:items-center md:justify-center">
+          <img
+            src={FotoMehmetGuray}
+            alt="MehmetGuray"
+            className="md:h-[34rem]"
+          />
+          <div className="text-center">
+            <h5 className="text-lg font-bold pb-3 text-[#FFFFFF] pt-10">
               WHY CHOOSE US?
             </h5>
-            <div className="vertical-line2 mb-1 md:ml-56"></div>
-            <div className="text-md text-[#C0BABA]">
-              Professional, dedicated and passionate travel advisors have an
+            <div className="vertical-line4 mb-1"></div>
+            <div className="text-md font-semibold md:mx-10 text-[#FFFFFF] px-5 sm:px-8 pb-10 sm:pb-16 md:px-0 text-left">
+              • Professional, dedicated and passionate travel advisors have an
               extensive background in luxury hotel industry
               <br />
-              ​ Personalised and exclusive service
+              ​• Personalised and exclusive service
               <br />
-              7/24 reachable and flexible team
+              • 7/24 reachable and flexible team
               <br />
-              Great connections with luxury hotel chains worldwide
-              <br />
-              Attention to each and every single details
+              • Great connections with luxury hotel chains worldwide
+              <br />• Attention to each and every single details
             </div>
           </div>
         </div>

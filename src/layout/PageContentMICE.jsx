@@ -213,13 +213,26 @@ export default function PageContentMICE(props) {
 
       {/* Clients */}
       <section>
-        <div className="flex flex-col items-center justify-center md:items-start">
-          <h2 className="text-lg font-bold text-[#98B8DF] mb-3">
+        <div className="flex flex-col md:flex-row items-center justify-center">
+          <h2 className="text-lg font-bold text-[#98B8DF] mr-6 mb-3 mt-16">
             OUR HAPPY CLIENTS
           </h2>
-          <div className="vertical-line2 mb-1 md:ml-20"></div>
-          <img src={Kalyon} alt="Kalyon" className="w-60 mb-5 md:mr-10" />
-          <img src={Malaysia} alt="Malaysia" className="w-60 mb-5 md:mr-10" />
+          <div className="flex flex-row md:flex-col-reverse">
+            <div className="md:hidden vertical-line5 ml-10 md:ml-20"></div>
+            <div className="hidden md:flex vertical-line6"></div>
+            <div className="md:flex md:flex-row">
+              <img
+                src={Kalyon}
+                alt="Kalyon"
+                className="w-60 mt-24 mb-5 md:mr-10"
+              />
+              <img
+                src={Malaysia}
+                alt="Malaysia"
+                className="w-60 mb-5 md:mr-10"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
