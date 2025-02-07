@@ -16,26 +16,26 @@ function MainPage() {
           <p className="text-[#FFFFFF] text-2xl font-semibold font-sans mb-16 md:mb-36 md:text-3xl">
             #waytogo
           </p>
-          <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col md:flex-row ">
             <Link to="/earthlightPrivateConcierge">
               <img
                 src={EartlightPrivateConciergeLogo}
                 alt="EartlightPrivateConciergeLogo"
-                className="w-48 sm:w-60 mb-10 md:mr-36"
+                className="w-48 sm:w-60 mb-10 md:mr-36 mainPage"
               />
             </Link>
             <Link to="/earthlightMice">
               <img
                 src={EarthlightMiceLogo}
                 alt="EarthlightMiceLogo"
-                className="w-48 sm:w-60"
+                className="w-48 sm:w-60 mainPage"
               />
             </Link>
             <Link to="/dilarasRecomienda">
               <img
                 src={DilarasLogo}
                 alt="DilarasLogo"
-                className="w-48 sm:w-60 mt-16 md:ml-36 md:mt-10"
+                className="w-48 sm:w-60 mt-16 md:ml-36 md:mt-10 mainPage"
               />
             </Link>
           </div>

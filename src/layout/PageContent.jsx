@@ -164,9 +164,6 @@ export default function PageContent(props) {
             <img src={TurkishFood} alt="TurkishFood" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Bodrum} alt="Bodrum" />
-          </SwiperSlide>
-          <SwiperSlide>
             <img src={CappadociaLandscape} alt="CappadociaLandscape" />
           </SwiperSlide>
           <SwiperSlide>
@@ -199,6 +196,8 @@ export default function PageContent(props) {
           <ImageSlider
             imageSliderData={imageSliderData}
             title="¿QUE OFRECEMOS?"
+            css="text-lg font-bold mt-12 md:mt-0 text-[#98B8DF] mb-3"
+            css2="flex flex-col h-72 md:items-left"
           />
         </div>
       </section>

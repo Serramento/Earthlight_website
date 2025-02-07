@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import EartlightPrivateConciergeLogo from "../images/EartlightPrivateConciergeLogo.png";
-import Egeo from "../images/Egeo.mp4";
+import PrivateVideo from "../images/PrivateVideo.mp4";
 import PageContentPrivateConcierge from "../layout/PageContentPrivateConcierge";
 
 function EarthlightPrivateConcierge() {
@@ -16,7 +16,7 @@ function EarthlightPrivateConcierge() {
     aboutUs: "ABOUT US",
     services: "SERVICES",
     contact: "CONTACT",
-    video: Egeo,
+    video: PrivateVideo,
     videoText: "Más Allá De Los Sueños",
     contactInfo: "Contact Info",
     mailtoHref:

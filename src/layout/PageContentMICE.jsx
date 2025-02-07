@@ -24,8 +24,8 @@ import Personalizacion from "../images/WhatWeOffer/Personalizacion.jpeg";
 import ContactForm2 from "../components/ContactForm2";
 import Kalyon from "../images/Feedback/Kalyon.png";
 import Malaysia from "../images/Feedback/Malaysia.png";
-import FotoMehmet from "../images/WhoWeAre/FotoMehmet.jpg";
-import FotoGuray from "../images/WhoWeAre/FotoGuray.jpg";
+import FotoMehmet from "../images/WhoWeAre/FotoMehmet.png";
+import FotoGuray from "../images/WhoWeAre/FotoGuray.png";
 
 const imageSliderData = [
   {
@@ -37,7 +37,7 @@ const imageSliderData = [
   {
     title: "MICE& Social Events",
     description:
-      "Our experienced team provides full-service Meetings, Incentives and Social Events solutions, including the finding the most convenient venue options as well as arranging the all decoration and technical equipment need for your event. Earthlight Travel Services is dedicated to understand your needs and provide tailor made service. With our creativity and huge experience, Earthlight Travel Services will go beyond the ordinary and bring you a fantastic and memorable event .",
+      "Our experienced team provides full-service Meetings, Incentives and Social Events solutions, including the finding the most convenient venue options as well as arranging the all decoration and technical equipment need for your event. We are dedicated to understand your needs and provide tailor made service. ",
     src: Personalizacion,
   },
 ];
@@ -143,7 +143,12 @@ export default function PageContentMICE(props) {
       {/* What We Offer */}
       <section className="w-screen" ref={props.servicesRef}>
         <div className="md:bg-[#FAFAFA] md:mx-36 md:py-20 px-4 sm:px-6 lg:px-8 text-center">
-          <ImageSlider imageSliderData={imageSliderData} title="SERVICES" />
+          <ImageSlider
+            imageSliderData={imageSliderData}
+            title="SERVICES"
+            css="text-lg font-bold mt-12 md:mt-0 text-[#98B8DF] mb-3 md:ml-10"
+            css2="flex flex-col h-80 md:items-left"
+          />
         </div>
       </section>
 
@@ -156,7 +161,7 @@ export default function PageContentMICE(props) {
       <section className="py-20 bg-[#FAFAFA] w-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h5 className="text-lg font-bold pb-3 text-[#98B8DF] md:text-left md:ml-36">
+            <h5 className="text-lg font-bold pb-3 text-[#98B8DF] md:text-left md:ml-[11rem]">
               OUR FAMILY
             </h5>
             <div className="vertical-line2 mb-1 md:ml-56"></div>
@@ -213,32 +218,41 @@ export default function PageContentMICE(props) {
 
       {/* Clients */}
       <section>
-        <div className="flex flex-col md:flex-row items-center justify-center">
+        <div className="md:hidden flex flex-col items-center justify-center">
           <h2 className="text-lg font-bold text-[#98B8DF] mr-6 mb-3 mt-16">
             OUR HAPPY CLIENTS
           </h2>
-          <div className="flex flex-row md:flex-col-reverse">
-            <div className="md:hidden vertical-line5 ml-10 md:ml-20"></div>
-            <div className="hidden md:flex vertical-line6"></div>
-            <div className="md:flex md:flex-row">
-              <img
-                src={Kalyon}
-                alt="Kalyon"
-                className="w-60 mt-24 mb-5 md:mr-10"
-              />
-              <img
-                src={Malaysia}
-                alt="Malaysia"
-                className="w-60 mb-5 md:mr-10"
-              />
+          <div className="flex flex-row">
+            <div className="vertical-line5 ml-10"></div>
+            <div className="">
+              <img src={Kalyon} alt="Kalyon" className="w-60 mt-24 mb-5" />
+              <img src={Malaysia} alt="Malaysia" className="w-60 mb-5" />
             </div>
           </div>
+        </div>
+        <div className="hidden md:flex flex-col mx-auto w-screen items-center justify-center my-28">
+          <div className="flex flex-row">
+            <h2 className="text-lg font-bold text-[#98B8DF] mt-48 mr-16">
+              OUR HAPPY CLIENTS
+            </h2>
+            <img
+              src={Kalyon}
+              alt="Kalyon"
+              className="w-60 object-contain ml-20"
+            />
+            <img
+              src={Malaysia}
+              alt="Malaysia"
+              className="w-60 object-contain ml-20"
+            />
+          </div>
+          <hr class="bg-[#98B8DF] w-[55rem] h-0.5" />
         </div>
       </section>
 
       {/* Contact Form */}
       <section
-        className="flex flex-col md:flex-row items-center justify-center w-screen"
+        className="flex flex-col md:flex-row items-center justify-center w-screen ml-0.5"
         ref={props.contactRef}
       >
         <div className="hidden md:flex flex-col mt-40 bottom-0">

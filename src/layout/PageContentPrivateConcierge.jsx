@@ -25,8 +25,8 @@ import ImmersionLocal from "../images/WhatWeOffer/ImmersionLocal.jpeg";
 import Personalizacion from "../images/WhatWeOffer/Personalizacion.jpeg";
 import ContactForm2 from "../components/ContactForm2";
 import FotoMehmetGuray from "../images/WhoWeAre/FotoMehmetGuray.jpeg";
-import FotoMehmet from "../images/WhoWeAre/FotoMehmet.jpg";
-import FotoGuray from "../images/WhoWeAre/FotoGuray.jpg";
+import FotoMehmet from "../images/WhoWeAre/FotoMehmet.png";
+import FotoGuray from "../images/WhoWeAre/FotoGuray.png";
 
 const InstagramData = [
   {
@@ -176,7 +176,12 @@ export default function PageContentPrivateConcierge(props) {
       {/* What We Offer */}
       <section className="w-screen" ref={props.servicesRef}>
         <div className="md:bg-[#FAFAFA] md:mx-36 md:py-20 px-4 sm:px-6 lg:px-8 text-center">
-          <ImageSlider imageSliderData={imageSliderData} title="SERVICES" />
+          <ImageSlider
+            imageSliderData={imageSliderData}
+            title="SERVICES"
+            css="text-lg font-bold mt-12 md:mt-0 text-[#98B8DF] mb-3 md:ml-10"
+            css2="flex flex-col h-96 md:items-left"
+          />
         </div>
       </section>
 
@@ -186,14 +191,14 @@ export default function PageContentPrivateConcierge(props) {
           <img
             src={FotoMehmetGuray}
             alt="MehmetGuray"
-            className="md:h-[34rem]"
+            className="md:h-[34rem] object-contain"
           />
-          <div className="text-center">
+          <div className="md:mr-20">
             <h5 className="text-lg font-bold pb-3 text-[#FFFFFF] pt-10">
               WHY CHOOSE US?
             </h5>
             <div className="vertical-line4 mb-1"></div>
-            <div className="text-md font-semibold md:mx-10 text-[#FFFFFF] px-5 sm:px-8 pb-10 sm:pb-16 md:px-0 text-left">
+            <div className="text-md font-semibold md:mx-10 text-[#FFFFFF] md:mt-2 px-5 sm:px-8 pb-10 sm:pb-16 md:px-0 text-left">
               • Professional, dedicated and passionate travel advisors have an
               extensive background in luxury hotel industry
               <br />
@@ -212,7 +217,7 @@ export default function PageContentPrivateConcierge(props) {
       <section className="py-20 bg-[#FAFAFA] w-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h5 className="text-lg font-bold pb-3 text-[#98B8DF] md:text-left md:ml-36">
+            <h5 className="text-lg font-bold pb-3 text-[#98B8DF] md:text-left md:ml-[11rem]">
               OUR FAMILY
             </h5>
             <div className="vertical-line2 mb-1 md:ml-56"></div>
@@ -302,7 +307,7 @@ export default function PageContentPrivateConcierge(props) {
 
       {/* Contact Form */}
       <section
-        className="flex flex-col md:flex-row items-center justify-center w-screen"
+        className="flex flex-col md:flex-row items-center justify-center w-screen ml-0.5"
         ref={props.contactRef}
       >
         <div className="hidden md:flex flex-col mt-40 bottom-0">

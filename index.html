@@ -66,8 +66,19 @@
       .vertical-line6 {
         width: 1px;
         height: 800px;
+        margin: 0 auto;
         background-color: #98b8df;
-        transform: rotate(90deg);
+      }
+    </style>
+    <style>
+      .mainPage {
+        opacity: 0;
+        animation: fadeIn 5s forwards;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
       }
     </style>
   </head>
