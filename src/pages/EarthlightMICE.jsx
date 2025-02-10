@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import EarthlightMiceLogo from "../images/EarthlightMiceLogo.png";
-import Event from "../images/Event.mp4";
+import Toplanti from "../images/Toplanti.mp4";
 import PageContentMICE from "../layout/PageContentMICE";
 
 function EarthlightMICE() {
@@ -16,7 +16,7 @@ function EarthlightMICE() {
     aboutUs: "ABOUT US",
     services: "SERVICES",
     contact: "CONTACT",
-    video: Event,
+    video: Toplanti,
     videoText: "Más Allá De Los Sueños",
     contactInfo: "Contact Info",
     mailtoHref:

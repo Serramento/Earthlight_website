@@ -31,6 +31,15 @@ import Flexibidad from "../images/WhatWeOffer/Flexibidad.jpeg";
 import ImmersionLocal from "../images/WhatWeOffer/ImmersionLocal.jpeg";
 import IntegraciondeTecnologia from "../images/WhatWeOffer/IntegraciondeTecnologia.jpeg";
 import Personalizacion from "../images/WhatWeOffer/Personalizacion.jpeg";
+import CataDeVino from "../images/Carousel/CataDeVino.jpg";
+import CeramoniaDeLosDerviches from "../images/Carousel/CeramoniaDeLosDerviches.jpg";
+import ClaseDeCocinaPrivada from "../images/Carousel/ClaseDeCocinaPrivada.jpg";
+import DesayunaConLosGlobos from "../images/Carousel/DesayunaConLosGlobos.jpg";
+import ExperienciaDeBicicletaEnCapadocia from "../images/Carousel/ExperienciaDeBicicletaEnCapadocia.jpg";
+import ExperienciaDeBañoTurco from "../images/Carousel/ExperienciaDeBañoTurco.png";
+import HelicopteroViajePorEncimaDeEstambul from "../images/Carousel/HelicopteroViajePorEncimaDeEstambul.jpg";
+import ViajeEnGoleta from "../images/Carousel/ViajeEnGoleta.jpg";
+import VisitaPrivadaDelAzoteaDeGranBazar from "../images/Carousel/VisitaPrivadaDelAzoteaDeGranBazar.jpeg";
 
 const InstagramData = [
   {
@@ -92,6 +101,53 @@ const imageSliderData = [
     title: "Amplia Conexiones Locales (guia en Español, experiencias etc.)",
     description: "Contamos con experiencia y conocimiento en la industria.",
     src: AmpliaConexionesLocales,
+  },
+];
+
+const ImageSliderData2 = [
+  {
+    title: "Helicoptero Viaje por Encima de Estambul",
+    src: HelicopteroViajePorEncimaDeEstambul,
+    alt: "HelicopteroViajePorEncimaDeEstambul",
+  },
+  {
+    title: "Desayuno con Globos",
+    src: DesayunaConLosGlobos,
+    alt: "DesayunaConLosGlobos",
+  },
+  {
+    title: "Ceramonia de Los Derviches",
+    src: CeramoniaDeLosDerviches,
+    alt: "CeramoniaDeLosDerviches",
+  },
+  {
+    title: "Clase de Cocina Privada",
+    src: ClaseDeCocinaPrivada,
+    alt: "ClaseDeCocinaPrivada",
+  },
+  {
+    title: "Experiencia de Bicicleta en Capadocia",
+    src: ExperienciaDeBicicletaEnCapadocia,
+    alt: "ExperienciaDeBicicletaEnCapadocia",
+  },
+  {
+    title: "Experiencia de Baño Turco",
+    src: ExperienciaDeBañoTurco,
+    alt: "ExperienciaDeBañoTurco",
+  },
+  {
+    title: "Cata de Vino",
+    src: CataDeVino,
+  },
+  {
+    title: "Viaje en Goleta",
+    src: ViajeEnGoleta,
+    alt: "ViajeEnGoleta",
+  },
+  {
+    title: "Visita Privada del Azotea de Gran Bazar",
+    src: VisitaPrivadaDelAzoteaDeGranBazar,
+    alt: "VisitaPrivadaDelAzoteaDeGranBazar",
   },
 ];
 
@@ -204,7 +260,7 @@ export default function PageContent(props) {
 
       {/* Carousel */}
       <section className="">
-        <ImageSlider2 />
+        <ImageSlider2 imageSlider={ImageSliderData2} />
       </section>
 
       {/* Who we are */}

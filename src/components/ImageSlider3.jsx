@@ -162,7 +162,7 @@ const ImageSlider3 = () => {
                   <div className="h-48 md:h-64 relative">
                     <img
                       src={slide.src}
-                      className="w-full h-full object-cover grayscale"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="m-7 text-left sm:h-[20rem] h-[27rem] md:h-48 flex flex-col justify-between">

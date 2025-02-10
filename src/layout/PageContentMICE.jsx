@@ -4,41 +4,63 @@ import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Alacati from "../images/KayanFotolar/Alacati.jpg";
-import CappadociaLandscape from "../images/KayanFotolar/CappadociaLandscape.jpg";
-import cappadociaReligiousHistory from "../images/KayanFotolar/cappadociaReligiousHistory.jpg";
-import EphesusCelsiusLibrary from "../images/KayanFotolar/EphesusCelsiusLibrary.jpg";
-import EphesusRuins from "../images/KayanFotolar/EphesusRuins.jpg";
-import HouseofVirginMary from "../images/KayanFotolar/HouseofVirginMary.jpg";
-import SpiceBazaar from "../images/KayanFotolar/SpiceBazaar.jpg";
-import HagiaSophia from "../images/KayanFotolar/HagiaSophia.jpg";
-import TurkishFood from "../images/KayanFotolar/TurkishFood.jpg";
-import KariyeMuseum from "../images/KayanFotolar/KariyeMuseum.jpg";
-import Gulet from "../images/KayanFotolar/Gulet.jpg";
-import Marmaris from "../images/KayanFotolar/Marmaris.jpg";
-import Bodrum from "../images/KayanFotolar/Bodrum.png";
+import Slider1 from "../images/KayanFotolar/Slider1.jpg";
+import Slider2 from "../images/KayanFotolar/Slider2.jpg";
+import Slider3 from "../images/KayanFotolar/Slider3.jpg";
+import Slider4 from "../images/KayanFotolar/Slider4.jpg";
+import Slider5 from "../images/KayanFotolar/Slider5.jpg";
+import Slider6 from "../images/KayanFotolar/Slider6.jpg";
+import Slider7 from "../images/KayanFotolar/Slider7.jpg";
+import Slider8 from "../images/KayanFotolar/Slider8.jpg";
 import ImageSlider from "../components/ImageSlider";
 import ImageSlider2 from "../components/ImageSlider2";
-import Flexibidad from "../images/WhatWeOffer/Flexibidad.jpeg";
-import Personalizacion from "../images/WhatWeOffer/Personalizacion.jpeg";
+import CorporateTravel from "../images/WhatWeOffer/CorporateTravel.jpeg";
+import SocialEvents from "../images/WhatWeOffer/SocialEvents.jpeg";
 import ContactForm2 from "../components/ContactForm2";
 import Kalyon from "../images/Feedback/Kalyon.png";
 import Malaysia from "../images/Feedback/Malaysia.png";
 import FotoMehmet from "../images/WhoWeAre/FotoMehmet.png";
 import FotoGuray from "../images/WhoWeAre/FotoGuray.png";
+import Event4 from "../images/Carousel/Event4.jpg";
+import Event3 from "../images/Carousel/Event3.jpg";
+import Event2 from "../images/Carousel/Event2.jpg";
+import Event1 from "../images/Carousel/Event1.jpg";
 
 const imageSliderData = [
   {
     title: "Corporate Travel",
     description:
       "Planning a business travel is always very complicated, time-consuming and overwhelming therefore our specialised team is here to assist you for making your corporate travel experience simpler, faster and easier.",
-    src: Flexibidad,
+    src: CorporateTravel,
   },
   {
     title: "MICE& Social Events",
     description:
       "Our experienced team provides full-service Meetings, Incentives and Social Events solutions, including the finding the most convenient venue options as well as arranging the all decoration and technical equipment need for your event. We are dedicated to understand your needs and provide tailor made service. ",
-    src: Personalizacion,
+    src: SocialEvents,
+  },
+];
+
+const ImageSliderData2 = [
+  {
+    title: "Helicoptero Viaje por Encima de Estambul",
+    src: Event1,
+    alt: "Event1",
+  },
+  {
+    title: "Desayuno con Globos",
+    src: Event2,
+    alt: "Event2",
+  },
+  {
+    title: "Ceramonia de Los Derviches",
+    src: Event3,
+    alt: "Event3",
+  },
+  {
+    title: "Clase de Cocina Privada",
+    src: Event4,
+    alt: "Event4",
   },
 ];
 
@@ -93,49 +115,28 @@ export default function PageContentMICE(props) {
           modules={[Autoplay]}
         >
           <SwiperSlide>
-            <img src={HagiaSophia} alt="HagiaSophia" />
+            <img src={Slider1} alt="Slider1" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Alacati} alt="Alacati" />
+            <img src={Slider2} alt="Slider2" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Bodrum} alt="Bodrum" />
+            <img src={Slider3} alt="Slider3" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Marmaris} alt="Marmaris" />
+            <img src={Slider4} alt="Slider4" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Gulet} alt="Gulet" />
+            <img src={Slider5} alt="Slider5" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={TurkishFood} alt="TurkishFood" />
+            <img src={Slider6} alt="Slider6" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Bodrum} alt="Bodrum" />
+            <img src={Slider7} alt="Slider7" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={CappadociaLandscape} alt="CappadociaLandscape" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src={cappadociaReligiousHistory}
-              alt="cappadociaReligiousHistory"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={EphesusCelsiusLibrary} alt="EphesusCelsiusLibrary" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={KariyeMuseum} alt="KariyeMuseum" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={EphesusRuins} alt="EphesusRuins" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={HouseofVirginMary} alt="HouseofVirginMary" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={SpiceBazaar} alt="SpiceBazaar" />
+            <img src={Slider8} alt="Slider8" />
           </SwiperSlide>
         </Swiper>
       </section>
@@ -154,7 +155,7 @@ export default function PageContentMICE(props) {
 
       {/* Carousel */}
       <section className="">
-        <ImageSlider2 />
+        <ImageSlider2 imageSlider={ImageSliderData2} />
       </section>
 
       {/* Who we are */}

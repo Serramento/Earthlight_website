@@ -4,25 +4,22 @@ import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Alacati from "../images/KayanFotolar/Alacati.jpg";
-import CappadociaLandscape from "../images/KayanFotolar/CappadociaLandscape.jpg";
-import cappadociaReligiousHistory from "../images/KayanFotolar/cappadociaReligiousHistory.jpg";
-import EphesusCelsiusLibrary from "../images/KayanFotolar/EphesusCelsiusLibrary.jpg";
-import EphesusRuins from "../images/KayanFotolar/EphesusRuins.jpg";
-import HouseofVirginMary from "../images/KayanFotolar/HouseofVirginMary.jpg";
-import SpiceBazaar from "../images/KayanFotolar/SpiceBazaar.jpg";
-import HagiaSophia from "../images/KayanFotolar/HagiaSophia.jpg";
-import TurkishFood from "../images/KayanFotolar/TurkishFood.jpg";
-import KariyeMuseum from "../images/KayanFotolar/KariyeMuseum.jpg";
-import Gulet from "../images/KayanFotolar/Gulet.jpg";
-import Marmaris from "../images/KayanFotolar/Marmaris.jpg";
-import Bodrum from "../images/KayanFotolar/Bodrum.png";
+import Kayan1 from "../images/KayanFotolar/Kayan1.jpeg";
+import Kayan2 from "../images/KayanFotolar/Kayan2.jpeg";
+import Kayan3 from "../images/KayanFotolar/Kayan3.jpeg";
+import Kayan4 from "../images/KayanFotolar/Kayan4.jpeg";
+import Kayan5 from "../images/KayanFotolar/Kayan5.jpeg";
+import Kayan7 from "../images/KayanFotolar/Kayan7.jpeg";
+import Kayan8 from "../images/KayanFotolar/Kayan8.jpeg";
+import Kayan9 from "../images/KayanFotolar/Kayan9.jpeg";
+import Kayan10 from "../images/KayanFotolar/Kayan10.jpeg";
+import Kayan11 from "../images/KayanFotolar/Kayan11.jpeg";
 import InstagramContent from "../components/InstagramContent";
 import ImageSlider from "../components/ImageSlider";
 import ImageSlider4 from "../components/ImageSlider4";
-import Flexibidad from "../images/WhatWeOffer/Flexibidad.jpeg";
-import ImmersionLocal from "../images/WhatWeOffer/ImmersionLocal.jpeg";
-import Personalizacion from "../images/WhatWeOffer/Personalizacion.jpeg";
+import FamilyVacation from "../images/WhatWeOffer/FamilyVacation.jpeg";
+import ArtCulture from "../images/WhatWeOffer/ArtCulture.jpeg";
+import ConciergeServices from "../images/WhatWeOffer/ConciergeServices.jpeg";
 import ContactForm2 from "../components/ContactForm2";
 import FotoMehmetGuray from "../images/WhoWeAre/FotoMehmetGuray.jpeg";
 import FotoMehmet from "../images/WhoWeAre/FotoMehmet.png";
@@ -54,19 +51,19 @@ const imageSliderData = [
     title: "Family Vacations",
     description:
       "Family vacations are ideal to get together and spend some quality of time together with the other family members. We would like you to leave your family traveling arrangements to hands of our experienced team members who will create extraordinary travel experiences will exceed everyone’s expectations.",
-    src: Flexibidad,
+    src: FamilyVacation,
   },
   {
     title: "Concierge Services",
     description:
       "Our luxury concierge services is operated by huge network of trusted global suppliers in order to provide you the best solutions as well as bespoke travel experiences. Arranging a restaurant reservation, luxurious car service or even a helicopter tour&transfer is only a phone call or text away.",
-    src: Personalizacion,
+    src: ConciergeServices,
   },
   {
     title: "Arts& Culture& History",
     description:
       "Our approach to historic and cultural places is private custom tours. All of these tours are individually guided with small groups of people. All our unique itineraries are handcrafted by our professional team and you will have a memorable experience from the moment your are greeted by your guide until you return to your hotel.",
-    src: ImmersionLocal,
+    src: ArtCulture,
   },
 ];
 
@@ -126,49 +123,34 @@ export default function PageContentPrivateConcierge(props) {
           modules={[Autoplay]}
         >
           <SwiperSlide>
-            <img src={HagiaSophia} alt="HagiaSophia" />
+            <img src={Kayan1} alt="Kayan1" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Alacati} alt="Alacati" />
+            <img src={Kayan2} alt="Kayan2" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Bodrum} alt="Bodrum" />
+            <img src={Kayan3} alt="Kayan3" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Marmaris} alt="Marmaris" />
+            <img src={Kayan4} alt="Kayan4" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Gulet} alt="Gulet" />
+            <img src={Kayan5} alt="Kayan5" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={TurkishFood} alt="TurkishFood" />
+            <img src={Kayan7} alt="Kayan7" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Bodrum} alt="Bodrum" />
+            <img src={Kayan8} alt="Kayan8" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={CappadociaLandscape} alt="CappadociaLandscape" />
+            <img src={Kayan9} alt="Kayan9" />
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src={cappadociaReligiousHistory}
-              alt="cappadociaReligiousHistory"
-            />
+            <img src={Kayan10} alt="Kayan10" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={EphesusCelsiusLibrary} alt="EphesusCelsiusLibrary" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={KariyeMuseum} alt="KariyeMuseum" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={EphesusRuins} alt="EphesusRuins" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={HouseofVirginMary} alt="HouseofVirginMary" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={SpiceBazaar} alt="SpiceBazaar" />
+            <img src={Kayan11} alt="Kayan11" />
           </SwiperSlide>
         </Swiper>
       </section>

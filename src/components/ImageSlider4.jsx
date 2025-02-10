@@ -4,28 +4,28 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
-import Feedback1 from "../images/Feedback/Feedback1.png";
-import Feedback2 from "../images/Feedback/Feedback2.jpg";
-import Feedback3 from "../images/Feedback/Feedback3.png";
+import Karakoy from "../images/Feedback/Karakoy.jpeg";
+import Arnavutkoy from "../images/Feedback/Arnavutkoy.jpeg";
+import Dolmabahce from "../images/Feedback/Dolmabahce.jpeg";
 
 const ImageSliderData3 = [
   {
     comment:
-      "Took their service to make last minute booking in Istanbul and Mr Mehmet was really helpful to help and the charge was quite reasonable (as compared online). Good advice given and visit was superb throughout!",
-    name: "Ahmad Hashim Mahmood",
-    src: Feedback1,
+      "Excellent from everyone with whom i deal for my first experience with Earthlight Travel Services. Insightful, responsive, patient, professional & helpful. I highly recommend their services.",
+    name: "Syafi Naz",
+    src: Arnavutkoy,
   },
   {
     comment:
-      "Excellent from everyone with whom i deal for my first experience with Earthlight Travel Services. Insightful, responsive, patient, professional & helpful. I highly recommend their services.",
-    name: "Syafi Naz",
-    src: Feedback2,
+      "Took their service to make last minute booking in Istanbul and Mr Mehmet was really helpful to help and the charge was quite reasonable (as compared online). Good advice given and visit was superb throughout!",
+    name: "Ahmad Hashim Mahmood",
+    src: Karakoy,
   },
   {
     comment:
       "The service was perfect, Mrs. Mehmet was so patient and helpful, He helped us with a lot of things, it will not be the last time to deal with this company, Thank you for your service ☺️.",
     name: "Alanood Alkuwari",
-    src: Feedback3,
+    src: Dolmabahce,
   },
 ];
 
@@ -79,7 +79,7 @@ const ImageSlider3 = () => {
                   <div className="h-48 md:h-64 relative">
                     <img
                       src={slide.src}
-                      className="w-full h-full object-cover grayscale"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="m-7 text-left sm:h-[20rem] h-[27rem] md:h-48 flex flex-col justify-between">
