@@ -17,8 +17,6 @@ import ImageSlider2 from "../components/ImageSlider2";
 import CorporateTravel from "../images/WhatWeOffer/CorporateTravel.jpeg";
 import SocialEvents from "../images/WhatWeOffer/SocialEvents.jpeg";
 import ContactForm2 from "../components/ContactForm2";
-import Kalyon from "../images/Feedback/Kalyon.png";
-import Malaysia from "../images/Feedback/Malaysia.png";
 import FotoMehmet from "../images/WhoWeAre/FotoMehmet.png";
 import FotoGuray from "../images/WhoWeAre/FotoGuray.png";
 import Event4 from "../images/Carousel/Event4.jpg";
@@ -43,22 +41,19 @@ const imageSliderData = [
 
 const ImageSliderData2 = [
   {
-    title: "Helicoptero Viaje por Encima de Estambul",
+    title: "Dedicated Team to Plan Dream Event",
     src: Event1,
     alt: "Event1",
   },
   {
-    title: "Desayuno con Globos",
     src: Event2,
     alt: "Event2",
   },
   {
-    title: "Ceramonia de Los Derviches",
     src: Event3,
     alt: "Event3",
   },
   {
-    title: "Clase de Cocina Privada",
     src: Event4,
     alt: "Event4",
   },
@@ -214,40 +209,6 @@ export default function PageContentMICE(props) {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Clients */}
-      <section>
-        <div className="md:hidden flex flex-col items-center justify-center">
-          <h2 className="text-lg font-bold text-[#98B8DF] mr-6 mb-3 mt-16">
-            OUR HAPPY CLIENTS
-          </h2>
-          <div className="flex flex-row">
-            <div className="vertical-line5 ml-10"></div>
-            <div className="">
-              <img src={Kalyon} alt="Kalyon" className="w-60 mt-24 mb-5" />
-              <img src={Malaysia} alt="Malaysia" className="w-60 mb-5" />
-            </div>
-          </div>
-        </div>
-        <div className="hidden md:flex flex-col mx-auto w-screen items-center justify-center my-28">
-          <div className="flex flex-row">
-            <h2 className="text-lg font-bold text-[#98B8DF] mt-48 mr-16">
-              OUR HAPPY CLIENTS
-            </h2>
-            <img
-              src={Kalyon}
-              alt="Kalyon"
-              className="w-60 object-contain ml-20"
-            />
-            <img
-              src={Malaysia}
-              alt="Malaysia"
-              className="w-60 object-contain ml-20"
-            />
-          </div>
-          <hr class="bg-[#98B8DF] w-[55rem] h-0.5" />
         </div>
       </section>
 

@@ -9,6 +9,7 @@ export default {
       },
       fontFamily: {
         lato: ["Lato", "sans-serif"],
+        montserrat: ["Montserrat"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

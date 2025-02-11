@@ -13,7 +13,7 @@ function MainPage() {
       <section className="relative w-screen h-screen flex justify-center items-center">
         <AutoPlaySilentVideo video={MainVideo} />
         <div className="absolute md:mb-48">
-          <p className="text-[#FFFFFF] text-2xl font-semibold font-sans mb-16 md:mb-36 md:text-3xl">
+          <p className="text-[#FFFFFF] text-2xl font-montserrat mb-16 md:mb-36 md:text-2xl">
             #waytogo
           </p>
           <div className="flex flex-col md:flex-row ">

@@ -17,7 +17,7 @@ function EarthlightMICE() {
     services: "SERVICES",
     contact: "CONTACT",
     video: Event2,
-    videoText: "Más Allá De Los Sueños",
+    videoText: "Memorable and Unique Experiences",
     contactInfo: "Contact Info",
     mailtoHref:
       "mailto:info@earthlighttravel.com?subject=SendMail&body=Description",

@@ -17,7 +17,7 @@ function EarthlightPrivateConcierge() {
     services: "SERVICES",
     contact: "CONTACT",
     video: PrivateVideo,
-    videoText: "Más Allá De Los Sueños",
+    videoText: "Travel Dreams Come True",
     contactInfo: "Contact Info",
     mailtoHref:
       "mailto:info@earthlighttravel.com?subject=SendMail&body=Description",
