@@ -1,6 +1,8 @@
 import React, { useRef, lazy, Suspense } from "react";
 import EarthlightMiceLogo from "../images/EarthlightMiceLogo.png";
 import Event2 from "../images/Event2.mp4";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 const Header = lazy(() => import("../layout/Header"));
 const Footer = lazy(() => import("../layout/Footer"));
@@ -27,7 +29,14 @@ function EarthlightMICE() {
   };
   return (
     <div className="font-lato">
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div className="bg-[#98B8DF] w-screen h-screen flex justify-center items-center text-[#FFFFFF] font-montserrat text-3xl">
+            <FontAwesomeIcon icon={faSpinner} className="animate-spin mr-3" />
+            Loading...
+          </div>
+        }
+      >
         <Header
           homeRef={homeRef}
           aboutUsRef={aboutUsRef}
@@ -35,15 +44,11 @@ function EarthlightMICE() {
           contactRef={contactRef}
           info={info}
         />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
         <PageContentMICE
           aboutUsRef={aboutUsRef}
           servicesRef={servicesRef}
           contactRef={contactRef}
         />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
         <Footer homeRef={homeRef} info={info} />
       </Suspense>
     </div>
