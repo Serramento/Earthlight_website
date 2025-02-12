@@ -1,26 +1,31 @@
 import "./App.css";
-import React from "react";
-import DilarasPage from "./pages/DilarasPage";
+import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import EarthlightPrivateConcierge from "./pages/EarthlightPrivateConcierge";
-import MainPage from "./pages/MainPage";
-import EarthlightMICE from "./pages/EarthlightMICE";
+
+const MainPage = lazy(() => import("./pages/MainPage"));
+const DilarasPage = lazy(() => import("./pages/DilarasPage"));
+const EarthlightPrivateConcierge = lazy(() =>
+  import("./pages/EarthlightPrivateConcierge")
+);
+const EarthlightMICE = lazy(() => import("./pages/EarthlightMICE"));
 
 function App() {
   return (
     <div className="font-lato">
-      <Routes>
-        <Route exact path="/" element={<MainPage />} />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route exact path="/" element={<MainPage />} />
 
-        <Route path="/dilarasRecomienda" element={<DilarasPage />} />
+          <Route path="/dilarasRecomienda" element={<DilarasPage />} />
 
-        <Route
-          path="/earthlightPrivateConcierge"
-          element={<EarthlightPrivateConcierge />}
-        />
+          <Route
+            path="/earthlightPrivateConcierge"
+            element={<EarthlightPrivateConcierge />}
+          />
 
-        <Route path="/earthlightMice" element={<EarthlightMICE />} />
-      </Routes>
+          <Route path="/earthlightMice" element={<EarthlightMICE />} />
+        </Routes>
+      </Suspense>
     </div>
   );
 }
