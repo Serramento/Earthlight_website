@@ -138,7 +138,7 @@ export default function PageContentMICE(props) {
 
       {/* What We Offer */}
       <section className="w-screen" ref={props.servicesRef}>
-        <div className="md:bg-[#FAFAFA] md:mx-36 md:py-20 px-4 sm:px-6 lg:px-8 text-center">
+        <div className="md:bg-[#FAFAFA] md:flex md:justify-center md:items-center md:mx-auto md:w-[70rem] md:py-20 px-4 sm:px-6 lg:px-8 text-center">
           <ImageSlider
             imageSliderData={imageSliderData}
             title="SERVICES"
@@ -214,7 +214,7 @@ export default function PageContentMICE(props) {
 
       {/* Contact Form */}
       <section
-        className="flex flex-col md:flex-row items-center justify-center w-screen ml-0.5"
+        className="flex flex-col md:flex-row items-center justify-center w-screen md:ml-0.5"
         ref={props.contactRef}
       >
         <div className="hidden md:flex flex-col mt-40 bottom-0">

@@ -248,7 +248,7 @@ export default function PageContent(props) {
 
       {/* What We Offer */}
       <section className="w-screen" ref={props.servicesRef}>
-        <div className="md:bg-[#FAFAFA] md:mx-36 md:py-20 px-4 sm:px-6 lg:px-8 text-center">
+        <div className="md:bg-[#FAFAFA] md:flex md:justify-center md:items-center md:mx-auto md:w-[70rem] md:py-20 text-center">
           <ImageSlider
             imageSliderData={imageSliderData}
             title="¿QUE OFRECEMOS?"
@@ -340,7 +340,7 @@ export default function PageContent(props) {
       </section>
 
       {/* Instagram Posts */}
-      <section className="py-20 w-screen">
+      <section className="py-20 flex w-screen">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-3">
             <h2 className="text-lg font-bold mb-3 text-[#98B8DF]">

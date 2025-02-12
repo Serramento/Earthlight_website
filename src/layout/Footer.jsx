@@ -10,10 +10,10 @@ import {
 
 export default function Footer(props) {
   return (
-    <div className="max-w-md md:max-w-7xl">
+    <div className="">
       {/* Contact Info */}
       <section className="pb-20 md:pt-0 md:pb-5 text-white bg-[#98B8DF] w-screen">
-        <div className="max-w-7xl flex flex-col items-center justify-center md:flex-row mx-auto px-4 sm:px-6 lg:px-8 text-left">
+        <div className="flex flex-col items-center justify-center md:flex-row mx-auto text-left">
           <div className="flex flex-col items-center justify-center md:pl-11">
             <div className="vertical-line mt-0 md:mr-64"></div>
             <Link

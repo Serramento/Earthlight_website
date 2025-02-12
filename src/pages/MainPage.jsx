@@ -16,12 +16,12 @@ function MainPage() {
           <p className="text-[#FFFFFF] text-2xl font-montserrat mb-16 md:mb-36 md:text-2xl">
             #waytogo
           </p>
-          <div className="flex flex-col md:flex-row ">
+          <div className="flex flex-col md:flex-row md:w-[65rem] md:justify-between ">
             <Link to="/earthlightPrivateConcierge">
               <img
                 src={EartlightPrivateConciergeLogo}
                 alt="EartlightPrivateConciergeLogo"
-                className="w-48 sm:w-60 mb-10 md:mr-36 mainPage"
+                className="w-48 sm:w-60 mb-10 mainPage"
               />
             </Link>
             <Link to="/earthlightMice">
@@ -35,7 +35,7 @@ function MainPage() {
               <img
                 src={DilarasLogo}
                 alt="DilarasLogo"
-                className="w-48 sm:w-60 mt-16 md:ml-36 md:mt-10 mainPage"
+                className="w-48 sm:w-60 mt-16 md:mt-10 mainPage"
               />
             </Link>
           </div>

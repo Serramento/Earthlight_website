@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import AutoPlaySilentVideo from "../components/AutoplaySilentVideo";
 import EarthlightLogo2 from "../images/EarthLightLogo2.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+
+const AutoPlaySilentVideo = lazy(() =>
+  import("../components/AutoplaySilentVideo")
+);
 
 export default function Header(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="max-w-md md:max-w-7xl" ref={props.homeRef}>
+    <div className="" ref={props.homeRef}>
       {/* Navbar */}
       <section className="w-screen">
         <nav className="fixed w-full top-0 left-0 bg-black/10 backdrop-blur-md z-50">
@@ -31,7 +36,7 @@ export default function Header(props) {
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center space-x-4">
                 <div>
-                  <ul className="flex flex-row">
+                  <ul className="flex flex-row justify-between w-[32rem]">
                     <li>
                       <button
                         onClick={() =>
@@ -90,7 +95,7 @@ export default function Header(props) {
                     </li>
                     <li>
                       <Link to="/">
-                        <img className="w-20 ml-5" src={EarthlightLogo2} />
+                        <img className="w-20" src={EarthlightLogo2} />
                       </Link>
                     </li>
                   </ul>
@@ -176,7 +181,16 @@ export default function Header(props) {
 
       {/* Video */}
       <section className="relative w-screen h-screen md:h-[46rem]">
-        <AutoPlaySilentVideo video={props.info.video} />
+        <Suspense
+          fallback={
+            <div className="bg-[#98B8DF] w-screen h-screen flex justify-center items-center text-[#FFFFFF] font-montserrat text-3xl">
+              <FontAwesomeIcon icon={faSpinner} className="animate-spin mr-3" />
+              Loading...
+            </div>
+          }
+        >
+          <AutoPlaySilentVideo video={props.info.video} />
+        </Suspense>
         {/*<video
           src={Goleta}
           id="bannerVideo"

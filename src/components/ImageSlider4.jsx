@@ -82,7 +82,7 @@ const ImageSlider3 = () => {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="m-7 text-left sm:h-[20rem] h-[27rem] md:h-48 flex flex-col justify-between">
+                  <div className="m-7 text-left sm:h-[12rem] h-[12rem] md:h-36 flex flex-col justify-between">
                     <p className="text-[#C0BABA] text-sm font-semibold text-left mt-3">
                       {slide.comment}
                     </p>
