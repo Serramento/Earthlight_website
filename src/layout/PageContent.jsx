@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
@@ -22,7 +22,6 @@ import Ugur from "../images/WhoWeAre/Ugur.png";
 import InstagramContent from "../components/InstagramContent";
 import ContactForm from "../components/ContactForm";
 import ImageSlider from "../components/ImageSlider";
-import ImageSlider2 from "../components/ImageSlider2";
 import ImageSlider3 from "../components/ImageSlider3";
 import AmpliaConexionesLocales from "../images/WhatWeOffer/AmpliaConexionesLocales.jpeg";
 import ApoyoenDestino from "../images/WhatWeOffer/ApoyoenDestino.jpeg";
@@ -40,6 +39,10 @@ import ExperienciaDeBañoTurco from "../images/Carousel/ExperienciaDeBañoTurco.
 import HelicopteroViajePorEncimaDeEstambul from "../images/Carousel/HelicopteroViajePorEncimaDeEstambul.jpg";
 import ViajeEnGoleta from "../images/Carousel/ViajeEnGoleta.jpg";
 import VisitaPrivadaDelAzoteaDeGranBazar from "../images/Carousel/VisitaPrivadaDelAzoteaDeGranBazar.jpeg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+
+const ImageSlider2 = lazy(() => import("../components/ImageSlider2"));
 
 const InstagramData = [
   {
@@ -260,7 +263,16 @@ export default function PageContent(props) {
 
       {/* Carousel */}
       <section className="">
-        <ImageSlider2 imageSlider={ImageSliderData2} />
+        <Suspense
+          fallback={
+            <div className="bg-[#98B8DF] w-screen h-screen flex justify-center items-center text-[#FFFFFF] font-montserrat text-3xl">
+              <FontAwesomeIcon icon={faSpinner} className="animate-spin mr-3" />
+              Loading...
+            </div>
+          }
+        >
+          <ImageSlider2 imageSlider={ImageSliderData2} />
+        </Suspense>
       </section>
 
       {/* Who we are */}

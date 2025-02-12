@@ -36,7 +36,7 @@ export default function Header(props) {
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center space-x-4">
                 <div>
-                  <ul className="flex flex-row justify-between w-[32rem]">
+                  <ul className="flex flex-row justify-between w-[35rem]">
                     <li>
                       <button
                         onClick={() =>
