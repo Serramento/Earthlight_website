@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
-import Header from "../layout/Header";
-import PageContent from "../layout/PageContent";
-import Footer from "../layout/Footer";
+import React, { useRef, lazy, Suspense } from "react";
 import DilarasLogo from "../images/DilarasLogo.png";
 import Egeo from "../images/Egeo.mp4";
+
+const Header = lazy(() => import("../layout/Header"));
+const Footer = lazy(() => import("../layout/Footer"));
+const PageContent = lazy(() => import("../layout/PageContent"));
 
 function DilarasPage() {
   const homeRef = useRef(null);
@@ -29,19 +30,25 @@ function DilarasPage() {
   };
   return (
     <div className="font-lato">
-      <Header
-        homeRef={homeRef}
-        aboutUsRef={aboutUsRef}
-        servicesRef={servicesRef}
-        contactRef={contactRef}
-        info={info}
-      />
-      <PageContent
-        aboutUsRef={aboutUsRef}
-        servicesRef={servicesRef}
-        contactRef={contactRef}
-      />
-      <Footer homeRef={homeRef} info={info} />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Header
+          homeRef={homeRef}
+          aboutUsRef={aboutUsRef}
+          servicesRef={servicesRef}
+          contactRef={contactRef}
+          info={info}
+        />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <PageContent
+          aboutUsRef={aboutUsRef}
+          servicesRef={servicesRef}
+          contactRef={contactRef}
+        />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Footer homeRef={homeRef} info={info} />
+      </Suspense>
     </div>
   );
 }

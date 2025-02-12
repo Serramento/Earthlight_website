@@ -1,9 +1,12 @@
-import React, { useRef } from "react";
-import Header from "../layout/Header";
-import Footer from "../layout/Footer";
+import React, { useRef, lazy, Suspense } from "react";
 import EartlightPrivateConciergeLogo from "../images/EartlightPrivateConciergeLogo.png";
 import PrivateVideo from "../images/PrivateVideo.mp4";
-import PageContentPrivateConcierge from "../layout/PageContentPrivateConcierge";
+
+const Header = lazy(() => import("../layout/Header"));
+const Footer = lazy(() => import("../layout/Footer"));
+const PageContentPrivateConcierge = lazy(() =>
+  import("../layout/PageContentPrivateConcierge")
+);
 
 function EarthlightPrivateConcierge() {
   const homeRef = useRef(null);
@@ -26,19 +29,25 @@ function EarthlightPrivateConcierge() {
   };
   return (
     <div className="font-lato">
-      <Header
-        homeRef={homeRef}
-        aboutUsRef={aboutUsRef}
-        servicesRef={servicesRef}
-        contactRef={contactRef}
-        info={info}
-      />
-      <PageContentPrivateConcierge
-        aboutUsRef={aboutUsRef}
-        servicesRef={servicesRef}
-        contactRef={contactRef}
-      />
-      <Footer homeRef={homeRef} info={info} />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Header
+          homeRef={homeRef}
+          aboutUsRef={aboutUsRef}
+          servicesRef={servicesRef}
+          contactRef={contactRef}
+          info={info}
+        />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <PageContentPrivateConcierge
+          aboutUsRef={aboutUsRef}
+          servicesRef={servicesRef}
+          contactRef={contactRef}
+        />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Footer homeRef={homeRef} info={info} />
+      </Suspense>
     </div>
   );
 }
