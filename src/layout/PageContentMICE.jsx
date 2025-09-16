@@ -19,6 +19,7 @@ import SocialEvents from "../images/WhatWeOffer/SocialEvents.jpeg";
 import ContactForm2 from "../components/ContactForm2";
 import FotoMehmet from "../images/WhoWeAre/FotoMehmet.png";
 import FotoGuray from "../images/WhoWeAre/FotoGuray.png";
+import AKIN from "../images/WhoWeAre/AKIN.png";
 import Event4 from "../images/Carousel/Event4.jpg";
 import Event3 from "../images/Carousel/Event3.jpg";
 import Event2 from "../images/Carousel/Event2.jpg";
@@ -162,6 +163,30 @@ export default function PageContentMICE(props) {
             </h5>
             <div className="vertical-line2 mb-1 md:ml-56"></div>
             <div>
+              <div className="flex flex-col mb-3 px-5 items-center justify-center md:flex-row md:mx-20">
+                <img
+                  src={AKIN}
+                  alt="Akın"
+                  className="w-60 rounded-full mb-5 md:mr-10"
+                />
+                <div>
+                  <h5 className="text-lg font-bold text-[#39405A] md:text-left">
+                    Akın Öcek
+                  </h5>
+                  <p className="text-lg text-[#39405A] md:text-left italic">
+                    Director of Sales / Corporate & MICE
+                  </p>
+                  <p className="mt-3 text-md text-[#C0BABA] md:text-left">
+                    Akın has been active in the tourism industry since 2013,
+                    working with leading luxury hotels such as Mandarin Oriental
+                    Bosphorus and Rixos Tersane Istanbul. Throughout his career,
+                    he has gained extensive experience in the Corporate and MICE
+                    sectors, contributing to the success of high-end hospitality
+                    operations.
+                  </p>
+                </div>
+              </div>
+              <div className="vertical-line2 mb-1 md:ml-56"></div>
               <div className="flex flex-col mb-3 px-5 items-center justify-center md:flex-row md:mx-20">
                 <img
                   src={FotoGuray}
