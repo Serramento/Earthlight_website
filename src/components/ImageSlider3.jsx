@@ -22,10 +22,59 @@ import Feedback13 from "../images/Feedback/Feedback13.png";
 const ImageSliderData3 = [
   {
     comment:
+      "Todo súper excelente desde el primer día que llegamos la atención para el pickup del aeropuerto, ¡¡todos los tours todos los guías todos los traslados en tiempo y Super bien atendidos!!Te agradezco muchísimo, y te felicito por el trabajo, quedamos Super contentos y realmente fue un Super viaje para nosotros.",
+    date: "Septiembre 2025",
+    name: "Joaquin Eugenio Guzman Arroyo",
+    src: Feedback10,
+  },
+  {
+    comment:
+      "Antes que nada te quería dar las gracias por todas tus atenciones por los guías que nos pusiste por los chóferes, de verdad que encantadoras personas son. Te felicito por el equipo que tienes. Querida Dilara, muchas gracias también a ti; fue un verdadero placer conocerte. ¡Te envío un abrazo enorme! Gracias.",
+    date: "Octubre 2025",
+    name: "Lala Saucedo",
+    src: Feedback5,
+  },
+  {
+    comment:
+      "¡Mil gracias por regalarnos un viaje que siempre recordaremos con una sonrisa! Todo impecable. Maravilloso todo el equipo. Todo el tiempo súper al pendiente de nosotras, encantadores y excelentes profesionales.Quedamos invitadas a volver a Turquía.",
+    date: "Junio 2025",
+    name: "Jessica Perez Flores",
+    src: Feedback8,
+  },
+  {
+    comment:
       "Unas palabras de agradecimiento y al mismo tiempo reconocimiento tanto portus obsequios como por el servicio y atención que recibimos. Todo salió de maravilla. Palomba la guía, un encanto ademas de profesional y conocedora de los diversos temas. Bayram (creo que asi se escribe) el chofer un joven muy atento y servicial sobre todo para ayudarnos a bajar de la camioneta sobre todo a mi mujer pues traia un dolor en una rodilla. Gracias nuevamente por todo y Consuelo tuvo toda la razon sobre la calidad de tu servicio. Gracias y quedamos invitadosa regresar a Estambul. Gracias nuevamente. Chema y Ale",
     date: "Octubre 2024",
     name: "Jose Maria Muñiz",
     src: Feedback1,
+  },
+  {
+    comment:
+      "Aprovecho para agradecer en nombre de mi familia y el mío LOS HERMOSOS REGALOS que nos entregaron a nuestra llegada a Turquía.",
+    date: "Julio 2025",
+    name: "Rosa H. Abascal",
+    src: Feedback12,
+  },
+  {
+    comment:
+      "El tour de hoy estuvo espectacular el guía muy completo y su español muy claro.",
+    date: "Mayo 2025",
+    name: "Norma C. J. Lopez",
+    src: Feedback13,
+  },
+  {
+    comment:
+      "Agradecemos mucho los detalles que mandaron. Todo estuvo excelente. El guía y el chofer muy profesionales.",
+    date: "Mayo 2025",
+    name: "S.M. Cohen",
+    src: Feedback6,
+  },
+  {
+    comment:
+      "Muchas gracias por todas sus atenciones, excelente servicio.",
+    date: "Mayo 2025",
+    name: "Federico Alcalá",
+    src: Feedback7,
   },
   {
     comment:

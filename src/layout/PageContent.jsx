@@ -18,7 +18,7 @@ import Gulet from "../images/KayanFotolar/Gulet.jpg";
 import Marmaris from "../images/KayanFotolar/Marmaris.jpg";
 import Bodrum from "../images/KayanFotolar/Bodrum.png";
 import Dilara from "../images/WhoWeAre/Dilara.png";
-import Ugur from "../images/WhoWeAre/Ugur.png";
+import GOKCE from "../images/WhoWeAre/GOKCE.png";
 import InstagramContent from "../components/InstagramContent";
 import ContactForm from "../components/ContactForm";
 import ImageSlider from "../components/ImageSlider";
@@ -294,55 +294,24 @@ export default function PageContent(props) {
                     Creativa de la Marca
                   </p>
                   <p className="mt-3 text-md text-[#C0BABA] md:text-left">
-                    ¡Hola! Soy Dilara. Me gradué del Liceo Francés Sainte
-                    Pulchérie y termine mis estudios en la Universidad de
-                    Istanbul sobre traducción Francés y Español.  Después de
-                    graduarme tuve oportunidad de empezar con el sector turismo
-                    en el segmento de lujo y llevo más de 15 años trabajando con
-                    las agencias de viajes más reconocidas de Sudamérica, Mexico
-                    y el Caribe brindando un servicio personalizado. Participé
-                    en varios eventos internacionales como Travel Week, ILTM São
-                    Paulo, Virtuoso Events y Virtuoso Roadshows en Mexico y Pure
-                    Life Experiences en Marruecos. Me gusta conocer las
-                    diferentes culturas y expectativas de mis futuros ‘posibles’
-                    viajeros. Estamos ofreciendo experiencias extraordinarias en
-                    todo Turquía. Soy perfeccionista, detallista y amante de
-                    explorar las últimas tendencias. Y siempre  me fascina tener
-                    buenos comentarios de los huéspedes. Me consideró ser una
-                    persona empática y creo firmemente que es una de las claves
-                    para cumplir los sueños de los que viajarán a Turquía
-                    conmigo.
+                    Hola, soy Dilara, graduada del Liceo Francés Sainte Pulchérie y licenciada en Traducción de Francés y Español por la Universidad de Estambul. Con más de 15 años de experiencia en turismo de lujo, me apasiona crear experiencias únicas combinando detalle, perfección y empatía. En 2024 fundamos D-lara Recomienda junto a Uğur Kıyıcı, padre de nuestro hijo Ege Kayra y mi socio. Su espíritu innovador y su entusiasmo por descubrir el mundo continúan siendo la inspiración de este proyecto
+
+
                   </p>
                 </div>
               </div>
               <div className="vertical-line2 mb-1 md:ml-56"></div>
               <div className="flex flex-col items-center justify-center px-5 md:flex-row md:mx-20">
-                <img src={Ugur} alt="Ugur" className="w-60 mb-5 md:mr-10" />
+                <img src={GOKCE} alt="Ugur" className="w-64 mb-5 md:mr-10" />
                 <div>
                   <h5 className="text-lg font-bold text-[#39405A] md:text-left">
-                    Ugur Kiyici
+                    Gökçe Arpad
                   </h5>
                   <p className="text-[#39405A] text-lg md:text-left italic">
                     Jefe de Operaciones
                   </p>
                   <p className="mt-3 text-md text-[#C0BABA] md:text-left">
-                    ¡Hola! Soy Uğur.  Bienvenidos a mi rincón de mundo digital,
-                    donde los daré una idea de quién soy y qué me motiva.Siempre
-                    me ha apasionado el turismo y siempre es un camino lleno de
-                    emociones. Mi camino desde el principio hasta ahora ha sido
-                    una mezcla de aprendizaje, desafíos y crecimiento en el
-                    sentido de superación personal. Soy curioso por aprender
-                    nuevas cosas y descubrir lugares nuevos. Yo creo que
-                    curiosidad es la esencia del aprendizaje continuo. Disfruto
-                    explorar el mundo que nos rodea profundizando en las
-                    complejidades de las temas turismo ,educación y trabajo. He
-                    tenido el privilegio de trabajar en todos los campos de la
-                    industria del turismo en mis 12 años de carrera. A través de
-                    estas experiencias logré mantener mi determinación de
-                    aprender más. El cielo es el límite! Gracias acompañarme en
-                    este sección y aprender un poco sobre mí. ¡El viaje que
-                    tienen por delante está lleno de curiosidad, crecimiento y
-                    experiencias únicas!
+                    Soy Gökçe. Después de graduarme de los colegios franceses Sainte Pulchérie y Saint Michel, estudié Administración de Empresas en la Universidad de Estambul. Durante 20 años trabajé en una prestigiosa marca alemana de motocicletas en las áreas de ventas, marketing; organizando eventos y experiencias exclusivas. Hoy combino mi pasión por los viajes con mi experiencia profesional, ofreciendo a viajeros exigentes experiencias personalizadas en Turquía.
                   </p>
                 </div>
               </div>
