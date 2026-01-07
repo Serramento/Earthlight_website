@@ -294,7 +294,11 @@ export default function PageContent(props) {
                     Creativa de la Marca
                   </p>
                   <p className="mt-3 text-md text-[#C0BABA] md:text-left">
-                    Hola, soy Dilara, graduada del Liceo Francés Sainte Pulchérie y licenciada en Traducción de Francés y Español por la Universidad de Estambul. Con más de 15 años de experiencia en turismo de lujo, me apasiona crear experiencias únicas combinando detalle, perfección y empatía. En 2024 fundamos D-lara Recomienda junto a Uğur Kıyıcı, padre de nuestro hijo Ege Kayra y mi socio. Su espíritu innovador y su entusiasmo por descubrir el mundo continúan siendo la inspiración de este proyecto
+                    Hola, soy Dilara, graduada del Liceo Francés Sainte Pulchérie y licenciada en Traducción de Francés y español por la Universidad de Estambul.
+
+Con más de 15 años de experiencia en turismo de lujo, me apasiona crear experiencias únicas combinando detalle, perfección y empatía. He participado en diversos eventos en Sudamérica y México.
+
+En 2024 fundamos D-lara Recomienda junto a Uğur Kıyıcı, padre de nuestro hijo Ege Kayra y mi socio. Su espíritu innovador y su entusiasmo por descubrir el mundo siguen vivos y continúan siendo la inspiración de este proyecto. ¡Descubre Turquía con nosotros!
 
 
                   </p>

@@ -22,17 +22,17 @@ import Feedback13 from "../images/Feedback/Feedback13.png";
 const ImageSliderData3 = [
   {
     comment:
-      "Todo súper excelente desde el primer día que llegamos la atención para el pickup del aeropuerto, ¡¡todos los tours todos los guías todos los traslados en tiempo y Super bien atendidos!!Te agradezco muchísimo, y te felicito por el trabajo, quedamos Super contentos y realmente fue un Super viaje para nosotros.",
-    date: "Septiembre 2025",
-    name: "Joaquin Eugenio Guzman Arroyo",
-    src: Feedback10,
+      "Todo estuvo muy bien organizado y la pasamos súper en Turquía. Viajar con jóvenes siempre implica un poco de paciencia porque a veces se desesperan con los tours, pero entendemos que es la única forma de conocer realmente los lugares, y valió totalmente la pena. Todos regresamos muy felices con la experiencia. Capadocia nos dejó impresionados, es un lugar verdaderamente espectacular. Los guías fueron muy buenos en todo momento, al igual que los pilotos de los buses. Éfeso también nos encantó, fue una visita muy especial. En realidad todo lo que conocimos nos encantó. Sin duda, un viaje que recordaremos con mucho cariño",
+    date: "Diciembre 2025",
+    name: "Maria Alejos",
+    src: Feedback13,
   },
   {
     comment:
-      "Antes que nada te quería dar las gracias por todas tus atenciones por los guías que nos pusiste por los chóferes, de verdad que encantadoras personas son. Te felicito por el equipo que tienes. Querida Dilara, muchas gracias también a ti; fue un verdadero placer conocerte. ¡Te envío un abrazo enorme! Gracias.",
-    date: "Octubre 2025",
-    name: "Lala Saucedo",
-    src: Feedback5,
+      "Muchas gracias por todas sus atenciones durante nuestra estancia en Istambul. La pasamos de maravilla. El transporte, el guía, el apoyo en aeropuerto todo excelente. Todos sus servicios fueron de un nivel de excelencia!!",
+    date: "Diciembre 2025",
+    name: "René Bortoni",
+    src: Feedback10,
   },
   {
     comment:
@@ -43,10 +43,24 @@ const ImageSliderData3 = [
   },
   {
     comment:
+      "Antes que nada te quería dar las gracias por todas tus atenciones por los guías que nos pusiste por los chóferes, de verdad que encantadoras personas son. Te felicito por el equipo que tienes. Querida Dilara, muchas gracias también a ti; fue un verdadero placer conocerte. ¡Te envío un abrazo enorme! Gracias.",
+    date: "Octubre 2025",
+    name: "Lala Saucedo",
+    src: Feedback5,
+  },
+  {
+    comment:
       "Unas palabras de agradecimiento y al mismo tiempo reconocimiento tanto portus obsequios como por el servicio y atención que recibimos. Todo salió de maravilla. Palomba la guía, un encanto ademas de profesional y conocedora de los diversos temas. Bayram (creo que asi se escribe) el chofer un joven muy atento y servicial sobre todo para ayudarnos a bajar de la camioneta sobre todo a mi mujer pues traia un dolor en una rodilla. Gracias nuevamente por todo y Consuelo tuvo toda la razon sobre la calidad de tu servicio. Gracias y quedamos invitadosa regresar a Estambul. Gracias nuevamente. Chema y Ale",
     date: "Octubre 2024",
     name: "Jose Maria Muñiz",
     src: Feedback1,
+  },
+    {
+    comment:
+      "Todo súper excelente desde el primer día que llegamos la atención para el pickup del aeropuerto, ¡¡todos los tours todos los guías todos los traslados en tiempo y Super bien atendidos!!Te agradezco muchísimo, y te felicito por el trabajo, quedamos Super contentos y realmente fue un Super viaje para nosotros.",
+    date: "Septiembre 2025",
+    name: "Joaquin Eugenio Guzman Arroyo",
+    src: Feedback10,
   },
   {
     comment:
