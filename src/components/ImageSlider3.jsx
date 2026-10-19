@@ -5,18 +5,18 @@ import {
   faChevronRight,
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
-import Feedback1 from "../images/Feedback/Feedback1.png";
+import Feedback1 from "../images/Feedback/Feedback1-optimized.webp";
 import Feedback2 from "../images/Feedback/Feedback2.jpg";
 import Feedback3 from "../images/Feedback/Feedback3.png";
 import Feedback4 from "../images/Feedback/Feedback4.png";
-import Feedback5 from "../images/Feedback/Feedback5.png";
+import Feedback5 from "../images/Feedback/Feedback5-optimized.webp";
 import Feedback6 from "../images/Feedback/Feedback6.png";
 import Feedback7 from "../images/Feedback/Feedback7.png";
-import Feedback8 from "../images/Feedback/Feedback8.png";
+import Feedback8 from "../images/Feedback/Feedback8-optimized.webp";
 import Feedback9 from "../images/Feedback/Feedback9.png";
-import Feedback10 from "../images/Feedback/Feedback10.png";
+import Feedback10 from "../images/Feedback/Feedback10-optimized.webp";
 import Feedback11 from "../images/Feedback/Feedback11.png";
-import Feedback12 from "../images/Feedback/Feedback12.png";
+import Feedback12 from "../images/Feedback/Feedback12-optimized.webp";
 import Feedback13 from "../images/Feedback/Feedback13.png";
 
 const ImageSliderData3 = [

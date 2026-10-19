@@ -7,9 +7,9 @@ import "swiper/css/navigation";
 import Alacati from "../images/KayanFotolar/Alacati.jpg";
 import CappadociaLandscape from "../images/KayanFotolar/CappadociaLandscape.jpg";
 import cappadociaReligiousHistory from "../images/KayanFotolar/cappadociaReligiousHistory.jpg";
-import EphesusCelsiusLibrary from "../images/KayanFotolar/EphesusCelsiusLibrary.jpg";
-import EphesusRuins from "../images/KayanFotolar/EphesusRuins.jpg";
-import HouseofVirginMary from "../images/KayanFotolar/HouseofVirginMary.jpg";
+import EphesusCelsiusLibrary from "../images/KayanFotolar/EphesusCelsiusLibrary-optimized.webp";
+import EphesusRuins from "../images/KayanFotolar/EphesusRuins-optimized.webp";
+import HouseofVirginMary from "../images/KayanFotolar/HouseofVirginMary-optimized.webp";
 import SpiceBazaar from "../images/KayanFotolar/SpiceBazaar.jpg";
 import HagiaSophia from "../images/KayanFotolar/HagiaSophia.jpg";
 import TurkishFood from "../images/KayanFotolar/TurkishFood.jpg";
@@ -17,7 +17,7 @@ import KariyeMuseum from "../images/KayanFotolar/KariyeMuseum.jpg";
 import Gulet from "../images/KayanFotolar/Gulet.jpg";
 import Marmaris from "../images/KayanFotolar/Marmaris.jpg";
 import Bodrum from "../images/KayanFotolar/Bodrum.png";
-import Dilara from "../images/WhoWeAre/Dilara.png";
+import Dilara from "../images/WhoWeAre/Dilara-optimized.webp";
 import GOKCE from "../images/WhoWeAre/GOKCE.png";
 import InstagramContent from "../components/InstagramContent";
 import ContactForm from "../components/ContactForm";
@@ -31,13 +31,13 @@ import ImmersionLocal from "../images/WhatWeOffer/ImmersionLocal.jpeg";
 import IntegraciondeTecnologia from "../images/WhatWeOffer/IntegraciondeTecnologia.jpeg";
 import Personalizacion from "../images/WhatWeOffer/Personalizacion.jpeg";
 import CataDeVino from "../images/Carousel/CataDeVino.jpg";
-import CeramoniaDeLosDerviches from "../images/Carousel/CeramoniaDeLosDerviches.jpg";
-import ClaseDeCocinaPrivada from "../images/Carousel/ClaseDeCocinaPrivada.jpg";
-import DesayunaConLosGlobos from "../images/Carousel/DesayunaConLosGlobos.jpg";
-import ExperienciaDeBicicletaEnCapadocia from "../images/Carousel/ExperienciaDeBicicletaEnCapadocia.jpg";
-import ExperienciaDeBañoTurco from "../images/Carousel/ExperienciaDeBañoTurco.png";
-import HelicopteroViajePorEncimaDeEstambul from "../images/Carousel/HelicopteroViajePorEncimaDeEstambul.jpg";
-import ViajeEnGoleta from "../images/Carousel/ViajeEnGoleta.jpg";
+import CeramoniaDeLosDerviches from "../images/Carousel/CeramoniaDeLosDerviches-optimized.webp";
+import ClaseDeCocinaPrivada from "../images/Carousel/ClaseDeCocinaPrivada-optimized.webp";
+import DesayunaConLosGlobos from "../images/Carousel/DesayunaConLosGlobos-optimized.webp";
+import ExperienciaDeBicicletaEnCapadocia from "../images/Carousel/ExperienciaDeBicicletaEnCapadocia-optimized.webp";
+import ExperienciaDeBañoTurco from "../images/Carousel/ExperienciaDeBañoTurco-optimized.webp";
+import HelicopteroViajePorEncimaDeEstambul from "../images/Carousel/HelicopteroViajePorEncimaDeEstambul-optimized.webp";
+import ViajeEnGoleta from "../images/Carousel/ViajeEnGoleta-optimized.webp";
 import VisitaPrivadaDelAzoteaDeGranBazar from "../images/Carousel/VisitaPrivadaDelAzoteaDeGranBazar.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
@@ -205,46 +205,64 @@ export default function PageContent(props) {
           modules={[Autoplay]}
         >
           <SwiperSlide>
-            <img src={HagiaSophia} alt="HagiaSophia" />
+            <img
+              src={HagiaSophia}
+              alt="Hagia Sophia"
+              loading="lazy"
+              decoding="async"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Alacati} alt="Alacati" />
+            <img src={Alacati} alt="Alacati" loading="lazy"
+              decoding="async" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Bodrum} alt="Bodrum" />
+            <img src={Bodrum} alt="Bodrum" loading="lazy"
+              decoding="async" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Marmaris} alt="Marmaris" />
+            <img src={Marmaris} alt="Marmaris" loading="lazy"
+              decoding="async" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Gulet} alt="Gulet" />
+            <img src={Gulet} alt="Gulet" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={TurkishFood} alt="TurkishFood" />
+            <img src={TurkishFood} alt="TurkishFood" loading="lazy"
+              decoding="async" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={CappadociaLandscape} alt="CappadociaLandscape" />
+            <img src={CappadociaLandscape} alt="CappadociaLandscape" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
             <img
               src={cappadociaReligiousHistory}
-              alt="cappadociaReligiousHistory"
+              alt="cappadociaReligiousHistory" 
+              loading="lazy"
+              decoding="async"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={EphesusCelsiusLibrary} alt="EphesusCelsiusLibrary" />
+            <img src={EphesusCelsiusLibrary} alt="EphesusCelsiusLibrary" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={KariyeMuseum} alt="KariyeMuseum" />
+            <img src={KariyeMuseum} alt="KariyeMuseum" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={EphesusRuins} alt="EphesusRuins" />
+            <img src={EphesusRuins} alt="EphesusRuins" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={HouseofVirginMary} alt="HouseofVirginMary" />
+            <img src={HouseofVirginMary} alt="HouseofVirginMary" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={SpiceBazaar} alt="SpiceBazaar" />
+            <img src={SpiceBazaar} alt="SpiceBazaar" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
         </Swiper>
       </section>

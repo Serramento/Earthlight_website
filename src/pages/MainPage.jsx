@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import AutoPlaySilentVideo from "../components/AutoplaySilentVideo";
-import MainVideo from "../images/MainVideo.mp4";
+import MainVideo from "../images/MainVideo-optimized-1600.mp4";
 import EartlightPrivateConciergeLogo from "../images/EartlightPrivateConciergeLogo.png";
 import EarthlightMiceLogo from "../images/EarthlightMiceLogo.png";
 import DilarasLogo from "../images/DilarasLogo.png";

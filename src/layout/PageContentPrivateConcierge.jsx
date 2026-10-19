@@ -123,34 +123,44 @@ export default function PageContentPrivateConcierge(props) {
           modules={[Autoplay]}
         >
           <SwiperSlide>
-            <img src={Kayan1} alt="Kayan1" />
+            <img src={Kayan1} alt="Kayan1" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Kayan2} alt="Kayan2" />
+            <img src={Kayan2} alt="Kayan2" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Kayan3} alt="Kayan3" />
+            <img src={Kayan3} alt="Kayan3" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Kayan4} alt="Kayan4" />
+            <img src={Kayan4} alt="Kayan4" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Kayan5} alt="Kayan5" />
+            <img src={Kayan5} alt="Kayan5" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Kayan7} alt="Kayan7" />
+            <img src={Kayan7} alt="Kayan7" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Kayan8} alt="Kayan8" />
+            <img src={Kayan8} alt="Kayan8" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Kayan9} alt="Kayan9" />
+            <img src={Kayan9} alt="Kayan9" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Kayan10} alt="Kayan10" />
+            <img src={Kayan10} alt="Kayan10" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Kayan11} alt="Kayan11" />
+            <img src={Kayan11} alt="Kayan11" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
         </Swiper>
       </section>

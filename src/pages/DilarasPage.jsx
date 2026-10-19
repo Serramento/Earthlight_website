@@ -1,6 +1,6 @@
 import React, { useRef, lazy, Suspense } from "react";
 import DilarasLogo from "../images/DilarasLogo.png";
-import Egeo from "../images/Egeo.mp4";
+import Egeo from "../images/Egeo-optimized-1600.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 

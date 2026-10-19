@@ -1,6 +1,6 @@
 import React, { useRef, lazy, Suspense } from "react";
 import EarthlightMiceLogo from "../images/EarthlightMiceLogo.png";
-import Event2 from "../images/Event2.mp4";
+import Event2 from "../images/Event2-optimized-1600.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 

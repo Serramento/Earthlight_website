@@ -1,6 +1,6 @@
 import React, { useRef, lazy, Suspense } from "react";
 import EartlightPrivateConciergeLogo from "../images/EartlightPrivateConciergeLogo.png";
-import PrivateVideo from "../images/PrivateVideo.mp4";
+import PrivateVideo from "../images/PrivateVideo-optimized-1600.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 

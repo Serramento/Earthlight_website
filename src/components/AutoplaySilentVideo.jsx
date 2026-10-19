@@ -14,6 +14,7 @@ export default function AutoPlaySilentVideo(props) {
       autoPlay
       muted
       playsInline
+      preload="metadata"
     >
       <source src={props.video} type="video/mp4" />
     </video>

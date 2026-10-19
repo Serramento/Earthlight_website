@@ -111,28 +111,36 @@ export default function PageContentMICE(props) {
           modules={[Autoplay]}
         >
           <SwiperSlide>
-            <img src={Slider1} alt="Slider1" />
+            <img src={Slider1} alt="Slider1" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Slider2} alt="Slider2" />
+            <img src={Slider2} alt="Slider2" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Slider3} alt="Slider3" />
+            <img src={Slider3} alt="Slider3" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Slider4} alt="Slider4" />
+            <img src={Slider4} alt="Slider4" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Slider5} alt="Slider5" />
+            <img src={Slider5} alt="Slider5" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Slider6} alt="Slider6" />
+            <img src={Slider6} alt="Slider6" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Slider7} alt="Slider7" />
+            <img src={Slider7} alt="Slider7" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Slider8} alt="Slider8" />
+            <img src={Slider8} alt="Slider8" loading="lazy"
+              decoding="async"/>
           </SwiperSlide>
         </Swiper>
       </section>
