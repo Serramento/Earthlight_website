@@ -22,6 +22,83 @@ import Feedback13 from "../images/Feedback/Feedback13.png";
 const ImageSliderData3 = [
   {
     comment:
+      "El dia fue excelente. Mine es super interesante & Muy atendido. Muy buena experiencia para todos. Muchas gracias.",
+    date: "Octubre 2026",
+    name: "Gordon Schwabacher",
+    src: Feedback10,
+  },
+  {
+    comment:
+      "Hola Dilara, muchas gracias por todo y la ayuda en el aeropuerto fue genial, no lo hubiéramos podido hacer sin Nyl. Saludos",
+    date: "Octubre 2026",
+    name: "Miriam Jeanette Walter Ramirez",
+    src: Feedback13,
+  },
+  {
+    comment:
+      "Juan es un gran guía; culto y ameno. La pasamos sensacional. Nuestro chofer excelente también. Disfrutamos y aprendimos mucho. De verdad tienes un servicio extraordinario. Gracias por el apoyo y todas las atenciones tuyas y de tu equipo! Muchas gracias por los presentes; están hermosos!",
+    date: "Octubre 2026",
+    name: "Veronica Maite Santos Jacob",
+    src: Feedback7,
+  },
+  {
+    comment:
+      "We end our trip today with a smile on our faces, thank you. Sila was a jewel , a perfect match for us three.",
+    date: "Septiembre 2026",
+    name: "Alonso Carral Cuevas",
+    src: Feedback10,
+  },
+  {
+    comment:
+      "Todo de maravilla! Muchas gracias por todos sus atenciones.",
+    date: "Septiembre 2026",
+    name: "Pedro Roncero",
+    src: Feedback7,
+  },
+  {
+    comment:
+      "Tuvimos una experiencia maravillosa con el servicio de Dilara y su equipo, nos ayudaron en todo momento , a cualquier hora , siempre con una actitud de servicio muy bonita y muy eficiente, Dilara siempre pendiente en toda nuestra estancia una persona muy amable y linda. Los guías , conductores , y acompañantes de traslados muy lindas personas , serviciales y amables. Infinitamente agradecidos por hacer de este viaje en Capadocia y Estambul , un viaje muy especial. Muchísimas gracias! Los recomiendo muchísimo 😀 Bendiciones! ",
+    date: "Septiembre 2026",
+    name: "Ma Eugenia Martínez de G",
+    src: Feedback7,
+  },
+  {
+    comment:
+      "Muchas gracias. Excelente servicio del guía, felicidades.",
+    date: "Julio 2026",
+    name: "Daniel Morales",
+    src: Feedback13,
+  },
+  {
+    comment:
+      "Todo excelente. Súper excelente. El hotel de hoy no nos encantó tanto.",
+    date: "Abril 2026",
+    name: "Lorena Garcia Corral",
+    src: Feedback7,
+  },
+  {
+    comment:
+      "Muchas gracias por sus atenciones en nuestra recepción en Estambul, está muy bonito el hotel y en un lugar céntrico como lo deseábamos. Todo excelente, Fortuna mucho conocimiento, tranquilidad y paciencia en sus exposiciones en cada lugar que visitamos  (de lo mejor) y Mustafa muy profesional y puntual es su labor de driver. Mil gracias Dilara por estar al pendiente de nuestro viaje.",
+    date: "Marzo 2026",
+    name: "Luis Contreras y Josefina Andrade",
+    src: Feedback7,
+  },
+  {
+    comment:
+      "Hola Dilara todo muy bien, muy agradable y con conocimientos de Murat. Muchas gracias todo muy bien en Capadocia tanto el guía Muko como el chófer muy agradables",
+    date: "Marzo 2026",
+    name: "Jose antonio Escandon",
+    src: Feedback13,
+  },
+  {
+    comment:
+      "Solo para comunicarte que ya terminamos los tours y paseos con Nurten.  Déjame te doy una felicitación a ti y a Nurten por el buen servicio y la cordialidad en toda la visita. Ampliamente recomendado.",
+    date: "Enero 2026",
+    name: "Jose Luis Sierra Villarreal",
+    src: Feedback10,
+  },
+  {
+    comment:
       "Todo estuvo muy bien organizado y la pasamos súper en Turquía. Viajar con jóvenes siempre implica un poco de paciencia porque a veces se desesperan con los tours, pero entendemos que es la única forma de conocer realmente los lugares, y valió totalmente la pena. Todos regresamos muy felices con la experiencia. Capadocia nos dejó impresionados, es un lugar verdaderamente espectacular. Los guías fueron muy buenos en todo momento, al igual que los pilotos de los buses. Éfeso también nos encantó, fue una visita muy especial. En realidad todo lo que conocimos nos encantó. Sin duda, un viaje que recordaremos con mucho cariño",
     date: "Diciembre 2025",
     name: "Maria Alejos",
